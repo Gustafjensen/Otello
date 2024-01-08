@@ -48,10 +48,12 @@ class GUI() extends JFrame {
             Sheet.flipBoxes(i, j)
             Sheet.flipRest(i, j)
             updateGui()
-            Sheet.checkIfOver()
             Sheet.changeTurn()
         else 
             JOptionPane.showMessageDialog(null ,"Not a legal move")
+        
+        if (Sheet.checkIfOver()) then 
+                JOptionPane.showMessageDialog(null, s"Game is over! Score: White ${Sheet.whitePoints} , Black ${Sheet.blackPoints}") 
     }
 
     def updateGui(): Unit = {
@@ -60,15 +62,13 @@ class GUI() extends JFrame {
                 val currentBox = Sheet.getBox(i, j)
                 val guiButton = board(i)(j)
 
-                guiButton.setBackground(Color.GREEN)
-
                 currentBox match {
                     case _: BlackBox => 
                         clear(guiButton)
                         drawCircle(guiButton, Color.BLACK)
                     case _: WhiteBox => 
                         clear(guiButton)
-                        drawCircle(guiButton, Color.WHITE)
+                        drawCircle(guiButton, new Color(225, 0, 0))
                     case _: EmptyBox => 
                 }
     }

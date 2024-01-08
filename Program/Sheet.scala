@@ -10,11 +10,14 @@ import scala.util.control.Breaks._
 object Sheet {
 
     var whiteTurn = true
-    
-    val sheet = Array.ofDim[BoxO](9,9)
 
-    for (i <- 0 to 8) do 
-        for (j <- 0 to 8) do 
+    var whitePoints = 2
+    var blackPoints = 2
+    
+    val sheet = Array.ofDim[BoxO](8,8)
+
+    for (i <- 0 to 7) do 
+        for (j <- 0 to 7) do 
             val box = new EmptyBox(i, j)
             sheet(i)(j) = box
     
@@ -65,6 +68,7 @@ object Sheet {
                         for (k <- 0 until currentIndex) do 
                             val currentBox = originalArray(k)
                             flipBoxes(currentBox.x, currentBox.y)
+                            givepoints()
                     
                     else if (!isEmptyBox(currentBox)) then
                         currentIndex += 1
@@ -92,7 +96,7 @@ object Sheet {
                 var foundEmpty = false
                 var k = 0
 
-                while (k < arrays.length - 1 && !foundEmpty && !isPossible) do
+                while (k < arrays.length && !foundEmpty && !isPossible) do
                     if (getOppositeBox().equals(arrays(k))) then
                         k += 1
                     else if (isEmptyBox(arrays(k))) then 
@@ -108,16 +112,25 @@ object Sheet {
 
     def checkIfOver(): Boolean = {
         var fullBoard = true
+        var allSameColor = true
         var noPossibleMove = true
 
         for (arrays <- sheet) do 
-            for (boxes <- arrays) do 
+            System.out.println("\n")
+            for (boxes <- arrays) do
+                System.out.print(boxes.toString()) 
                 if (isEmptyBox(boxes)) then
                     fullBoard = false
-                else if (getSameBox().equals(boxes)) then
-                    noPossibleMove = false
+                    if isPossibleMove(boxes.x, boxes.y) then
+                        noPossibleMove = false 
+
+                if (getSameBox().equals(boxes)) then
+                    allSameColor = false
+                    
         
-        fullBoard && noPossibleMove
+        
+        
+        fullBoard || allSameColor || noPossibleMove
     }
 
 
@@ -164,4 +177,12 @@ object Sheet {
     def getBox(i: Int, j: Int): BoxO = 
         sheet(i)(j)
     
+    def givepoints(): Unit = {
+        if whiteTurn then 
+            whitePoints += 1
+            blackPoints -= 1
+        else 
+            whitePoints -= 1
+            blackPoints += 1
+    }
 }
