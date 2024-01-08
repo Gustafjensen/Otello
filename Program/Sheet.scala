@@ -11,9 +11,6 @@ object Sheet {
 
     var whiteTurn = true
 
-    var whitePoints = 2
-    var blackPoints = 2
-    
     val sheet = Array.ofDim[BoxO](8,8)
 
     for (i <- 0 to 7) do 
@@ -68,7 +65,7 @@ object Sheet {
                         for (k <- 0 until currentIndex) do 
                             val currentBox = originalArray(k)
                             flipBoxes(currentBox.x, currentBox.y)
-                            givepoints()
+                            
                     
                     else if (!isEmptyBox(currentBox)) then
                         currentIndex += 1
@@ -110,15 +107,13 @@ object Sheet {
             isPossible
 
 
-    def checkIfOver(): Boolean = {
+    def checkIfOver(): Boolean = 
         var fullBoard = true
         var allSameColor = true
         var noPossibleMove = true
 
         for (arrays <- sheet) do 
-            System.out.println("\n")
             for (boxes <- arrays) do
-                System.out.print(boxes.toString()) 
                 if (isEmptyBox(boxes)) then
                     fullBoard = false
                     if isPossibleMove(boxes.x, boxes.y) then
@@ -127,30 +122,32 @@ object Sheet {
                 if (getSameBox().equals(boxes)) then
                     allSameColor = false
                     
-        
-        
-        
         fullBoard || allSameColor || noPossibleMove
-    }
+    
+    def countPoints(): (Int, Int) = 
+        var whitePoints = 0
+        var blackPoints = 0
+        for (arrays <- sheet) do
+            for (box <- arrays) do
+                if (box.isWhite()) then
+                    whitePoints += 1
+                if (box.isBlack()) then 
+                    blackPoints += 1
+        (whitePoints, blackPoints)
 
 
-    def flipBoxes(i: Int, j: Int): Unit = {
-        if (whiteTurn) {
+    def flipBoxes(i: Int, j: Int): Unit = 
+        if (whiteTurn) 
             makeWhite(i, j)
-        }
-        else {
+        
+        else 
             makeBlack(i, j)
-        }
-    }
-
-
-    def makeBlack(i: Int, j: Int): Unit = {
+        
+    def makeBlack(i: Int, j: Int): Unit = 
         sheet(i)(j) = new BlackBox(i, j)
-    }
 
-    def makeWhite(i: Int, j: Int): Unit = {
+    def makeWhite(i: Int, j: Int): Unit = 
         sheet(i)(j) = new WhiteBox(i, j)
-    }
 
     def isInRange(i: Int, j: Int): Boolean =
         i <= 7 && i >= 0 &&
@@ -177,12 +174,12 @@ object Sheet {
     def getBox(i: Int, j: Int): BoxO = 
         sheet(i)(j)
     
-    def givepoints(): Unit = {
-        if whiteTurn then 
-            whitePoints += 1
-            blackPoints -= 1
-        else 
-            whitePoints -= 1
-            blackPoints += 1
-    }
+    // def givepoints(): Unit = {
+    //     if whiteTurn then 
+    //         whitePoints += 1
+    //         blackPoints -= 1
+    //     else 
+    //         whitePoints -= 1
+    //         blackPoints += 1
+    // }
 }

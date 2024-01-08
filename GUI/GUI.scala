@@ -53,7 +53,7 @@ class GUI() extends JFrame {
             JOptionPane.showMessageDialog(null ,"Not a legal move")
         
         if (Sheet.checkIfOver()) then 
-                JOptionPane.showMessageDialog(null, s"Game is over! Score: White ${Sheet.whitePoints} , Black ${Sheet.blackPoints}") 
+                JOptionPane.showMessageDialog(null, s"Game is over! Score: White ${Sheet.countPoints()._1} , Black ${Sheet.countPoints()._2}") 
     }
 
     def updateGui(): Unit = {
