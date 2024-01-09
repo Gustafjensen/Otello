@@ -5,6 +5,7 @@ import java.awt._
 import java.awt.event.ActionEvent
 import java.awt.event.ActionListener
 import otello.Sheet
+import java.awt.event.WindowEvent
 
 
 class GUI() extends JFrame {
@@ -18,6 +19,7 @@ class GUI() extends JFrame {
     
     def initGui(): Unit = {
         setLayout(new GridLayout(nbrBoxes, nbrBoxes))
+        Sheet.startingSheet()
         
         for (i <- 0 until nbrBoxes) do 
             for ( j <- 0 until nbrBoxes) do
@@ -52,8 +54,8 @@ class GUI() extends JFrame {
         else 
             JOptionPane.showMessageDialog(null ,"Not a legal move")
         
-        if (Sheet.checkIfOver()) then 
-                JOptionPane.showMessageDialog(null, s"Game is over! Score: White ${Sheet.countPoints()._1} , Black ${Sheet.countPoints()._2}") 
+        if (Sheet.checkIfOver()) then
+            gameOverMessage("Good Game!")
     }
 
     def updateGui(): Unit = {
@@ -70,6 +72,7 @@ class GUI() extends JFrame {
                         clear(guiButton)
                         drawCircle(guiButton, new Color(225, 0, 0))
                     case _: EmptyBox => 
+                        clear(guiButton)
                 }
     }
 
@@ -80,4 +83,30 @@ class GUI() extends JFrame {
     def clear(button: JButton): Unit = {
         button.setIcon(null)
     }
+
+    private def gameOverMessage(s: String): Unit = 
+        val options: Array[Object] = Array("Play again", "Exit")
+
+        val choice = JOptionPane.showOptionDialog(
+            null,
+            s"Game is over! Score: White ${Sheet.countPoints()._1} , Black ${Sheet.countPoints()._2}",
+            s,
+            JOptionPane.YES_NO_OPTION,
+            JOptionPane.QUESTION_MESSAGE,
+            null,
+            options,
+            options(0)
+        )
+
+        choice match {
+            case JOptionPane.YES_OPTION => 
+                Sheet.startingSheet()
+                updateGui()
+            
+            case JOptionPane.NO_OPTION => 
+                dispatchEvent(new WindowEvent(this, WindowEvent.WINDOW_CLOSING))
+            
+            case JOptionPane.CLOSED_OPTION =>
+                gameOverMessage("You need to make a choice!")
+        }
 }

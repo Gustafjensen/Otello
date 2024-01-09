@@ -13,15 +13,16 @@ object Sheet {
 
     val sheet = Array.ofDim[BoxO](8,8)
 
-    for (i <- 0 to 7) do 
-        for (j <- 0 to 7) do 
-            val box = new EmptyBox(i, j)
-            sheet(i)(j) = box
-    
-    makeWhite(3, 3)
-    makeWhite(4, 4)
-    makeBlack(3, 4)
-    makeBlack(4, 3)
+    def startingSheet(): Unit = 
+        for (i <- 0 to 7) do 
+            for (j <- 0 to 7) do 
+                val box = new EmptyBox(i, j)
+                sheet(i)(j) = box
+        
+        makeWhite(3, 3)
+        makeWhite(4, 4)
+        makeBlack(3, 4)
+        makeBlack(4, 3)
     
     def arrayMaker(i: Int, j: Int, a: Int, b: Int): Array[BoxO] = {
         val Boxes = ArrayBuffer[BoxO]()
@@ -173,13 +174,4 @@ object Sheet {
 
     def getBox(i: Int, j: Int): BoxO = 
         sheet(i)(j)
-    
-    // def givepoints(): Unit = {
-    //     if whiteTurn then 
-    //         whitePoints += 1
-    //         blackPoints -= 1
-    //     else 
-    //         whitePoints -= 1
-    //         blackPoints += 1
-    // }
 }
