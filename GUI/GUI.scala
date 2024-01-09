@@ -12,7 +12,7 @@ class GUI() extends JFrame {
 
     setTitle("Otello")
 
-    val nbrBoxes = 8
+    val nbrBoxes = Sheet.sheetLength
 
     val boxSize = 50    
     val board = Array.ofDim[JButton](nbrBoxes, nbrBoxes)

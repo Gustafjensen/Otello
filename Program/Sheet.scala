@@ -11,18 +11,20 @@ object Sheet {
 
     var whiteTurn = true
 
-    val sheet = Array.ofDim[BoxO](8,8)
+    val sheetLength = 8
+
+    val sheet = Array.ofDim[BoxO](sheetLength,sheetLength)
 
     def startingSheet(): Unit = 
-        for (i <- 0 to 7) do 
-            for (j <- 0 to 7) do 
+        for (i <- 0 to sheetLength - 1) do 
+            for (j <- 0 to sheetLength - 1) do 
                 val box = new EmptyBox(i, j)
                 sheet(i)(j) = box
         
-        makeWhite(3, 3)
-        makeWhite(4, 4)
-        makeBlack(3, 4)
-        makeBlack(4, 3)
+        makeWhite((sheetLength/2 - 1), (sheetLength/2 - 1))
+        makeWhite((sheetLength/2), (sheetLength/2))
+        makeBlack((sheetLength/2 - 1), (sheetLength/2))
+        makeBlack((sheetLength/2), (sheetLength/2 - 1))
     
     def arrayMaker(i: Int, j: Int, a: Int, b: Int): Array[BoxO] = {
         val Boxes = ArrayBuffer[BoxO]()
@@ -151,24 +153,24 @@ object Sheet {
         sheet(i)(j) = new WhiteBox(i, j)
 
     def isInRange(i: Int, j: Int): Boolean =
-        i <= 7 && i >= 0 &&
-        j <= 7 && j >= 0
+        i <= sheetLength - 1 && i >= 0 &&
+        j <= sheetLength - 1 && j >= 0
     
     def changeTurn(): Unit = 
         whiteTurn = !whiteTurn
 
     def getOppositeBox(): BoxO =
         if (whiteTurn) then
-            new BlackBox(10, 10)
-        else new WhiteBox(10, 10)
+            new BlackBox(sheetLength + 2, sheetLength + 2)
+        else new WhiteBox(sheetLength + 2, sheetLength + 2)
 
     def getSameBox(): BoxO = 
         if (whiteTurn) then
-            new WhiteBox(10, 10)
-        else new BlackBox(10, 10)
+            new WhiteBox(sheetLength + 2, sheetLength + 2)
+        else new BlackBox(sheetLength + 2, sheetLength + 2)
 
     def isEmptyBox(box: BoxO): Boolean = {
-        val emptyBox = new EmptyBox(10, 10)
+        val emptyBox = new EmptyBox(sheetLength + 2, sheetLength + 2)
         box.equals(emptyBox)
     }
 
