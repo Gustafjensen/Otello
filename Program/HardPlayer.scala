@@ -1,17 +1,21 @@
-// package otello
+package otello
 
-// class HardPlayer extends Opponent {
+class HardPlayer extends Opponent {
   
-//     def doOpposingPlayerTurn: Unit = 
+    def doOpposingPlayerTurn(): Unit = 
 
-//         var BestMove = (0, 0)
-//         var mostFlipped = 0
+        var bestMove = (0, 0)
+        var mostFlipped = 0
 
-//         for (i <- 0 until Sheet.sheetLength) do 
-//             for (j <- 0 until Sheet.sheetLength) do
+        for (i <- 0 until Sheet.sheetLength) do 
+            for (j <- 0 until Sheet.sheetLength) do
 
-//                 if Sheet.isPossibleMove(i, j) then 
-
-
-
-// }
+                if Sheet.isPossibleMove(i, j) then
+                    val amountOfFlips = Sheet.shouldFlip(i, j).flatten.size
+                    if mostFlipped < amountOfFlips then
+                        mostFlipped = amountOfFlips
+                        bestMove = (i, j)
+        
+        //Thread.sleep(2000)
+        Sheet.makeMove(bestMove._1, bestMove._2)
+}

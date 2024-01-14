@@ -6,6 +6,9 @@ import java.awt.event.ActionEvent
 import java.awt.event.ActionListener
 import otello.Sheet
 import java.awt.event.WindowEvent
+import scala.concurrent.{Await, Future}
+import scala.concurrent.duration._
+import scala.concurrent.ExecutionContext.Implicits.global
 
 
 class GUI() extends JFrame {
@@ -17,6 +20,8 @@ class GUI() extends JFrame {
     val boxSize = (nbrBoxes * 6.25).toInt
 
     val board = Array.ofDim[JButton](nbrBoxes, nbrBoxes)
+
+    val opponent = chooseOpponentMessage()
     
     def initGui(): Unit = 
         setLayout(new GridLayout(nbrBoxes, nbrBoxes))
@@ -48,10 +53,13 @@ class GUI() extends JFrame {
     def handleButtonClick(i: Int, j: Int): Unit = 
         
         if (Sheet.isPossibleMove(i, j)) then 
-            Sheet.flipBoxes(i, j)
-            Sheet.flipRest(i, j)
+            Sheet.makeMove(i, j)
             updateGui()
-            Sheet.changeTurn()
+            Thread.sleep(2000)
+            opponent.doOpposingPlayerTurn()
+            updateGui()
+            
+            
         else 
             JOptionPane.showMessageDialog(null ,"Not a legal move")
         
@@ -74,6 +82,7 @@ class GUI() extends JFrame {
                         drawCircle(guiButton, new Color(225, 0, 0))
                     case _: EmptyBox => 
                         clear(guiButton)
+        
                 
     
 
@@ -85,7 +94,7 @@ class GUI() extends JFrame {
         button.setIcon(null)
     
     
-    private def welcomeMessage(): Unit = 
+    private def chooseOpponentMessage(): Opponent = 
         val options: Array[Object] = Array("One Player", "Two Player")
 
         val choice = JOptionPane.showOptionDialog(
@@ -101,9 +110,34 @@ class GUI() extends JFrame {
 
         choice match 
             case 0 =>
-                
+                chooseDifficultyMessage()
             case 1 =>
-        
+                new TwoPlayer
+
+    private def chooseDifficultyMessage(): Opponent = 
+        val options: Array[Object] = Array("Easy Mode", "Hard Mode")
+
+        val choice = JOptionPane.showOptionDialog(
+            null,
+            "Welcome to Otello!",
+            "Choose Difficulty",
+            JOptionPane.DEFAULT_OPTION,
+            JOptionPane.QUESTION_MESSAGE,
+            null,
+            options,
+            options(0)
+        )
+
+        choice match 
+            case 0 => 
+                new EasyPlayer
+            case 1 => 
+                new HardPlayer
+            case _ => chooseDifficultyMessage()
+
+
+
+
     private def gameOverMessage(s: String): Unit = 
         val options: Array[Object] = Array("Play again", "Exit")
 

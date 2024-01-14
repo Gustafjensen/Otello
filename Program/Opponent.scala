@@ -1,5 +1,5 @@
 package otello
 
 trait Opponent {
-    def doOpposingPlayerTurn: Unit
+    def doOpposingPlayerTurn(): Unit
 }

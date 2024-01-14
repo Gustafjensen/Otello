@@ -38,6 +38,11 @@ object Sheet {
         Boxes.toArray
     }
 
+    def makeMove(i: Int, j: Int): Unit =
+        flipBoxes(i ,j)
+        flipRest(i, j)
+        changeTurn()
+
     private def possibleFlips(i: Int, j: Int): Array[Array[BoxO]] = {
 
         val pFlips = ArrayBuffer[Array[BoxO]]()
@@ -67,7 +72,6 @@ object Sheet {
                     
                     if (currentBox.equals(placedBox)) then
                         flipMatrix += originalArray.take(currentIndex)
-                            
                     
                     else if (!isEmptyBox(currentBox)) then
                         currentIndex += 1
@@ -82,7 +86,7 @@ object Sheet {
         flipMatrix.toArray
     }
 
-    def flipRest(i: Int, j: Int): Unit =
+    private def flipRest(i: Int, j: Int): Unit =
         for (arrays <- shouldFlip(i, j)) do
             for (box <- arrays) do
                 flipBoxes(box.x, box.y)
@@ -131,6 +135,7 @@ object Sheet {
                     
         fullBoard || allSameColor || noPossibleMove
     
+
     def countPoints(): (Int, Int) = 
         var whitePoints = 0
         var blackPoints = 0
@@ -173,10 +178,10 @@ object Sheet {
             new WhiteBox(sheetLength + 2, sheetLength + 2)
         else new BlackBox(sheetLength + 2, sheetLength + 2)
 
-    def isEmptyBox(box: BoxO): Boolean = {
+    def isEmptyBox(box: BoxO): Boolean = 
         val emptyBox = new EmptyBox(sheetLength + 2, sheetLength + 2)
         box.equals(emptyBox)
-    }
+    
 
     def getBox(i: Int, j: Int): BoxO = 
         sheet(i)(j)
