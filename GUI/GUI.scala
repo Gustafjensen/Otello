@@ -55,6 +55,7 @@ class GUI() extends JFrame {
         if (Sheet.isPossibleMove(i, j)) then 
             Sheet.makeMove(i, j)
             updateGui()
+            
             Thread.sleep(2000)
             opponent.doOpposingPlayerTurn()
             updateGui()
