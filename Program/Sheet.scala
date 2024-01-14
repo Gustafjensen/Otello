@@ -26,7 +26,7 @@ object Sheet {
         makeBlack((sheetLength/2 - 1), (sheetLength/2))
         makeBlack((sheetLength/2), (sheetLength/2 - 1))
     
-    def arrayMaker(i: Int, j: Int, a: Int, b: Int): Array[BoxO] = {
+    private def arrayMaker(i: Int, j: Int, a: Int, b: Int): Array[BoxO] = {
         val Boxes = ArrayBuffer[BoxO]()
         var x = i + a  
         var y = j + b
@@ -38,7 +38,7 @@ object Sheet {
         Boxes.toArray
     }
 
-    def possibleFlips(i: Int, j: Int): Array[Array[BoxO]] = {
+    private def possibleFlips(i: Int, j: Int): Array[Array[BoxO]] = {
 
         val pFlips = ArrayBuffer[Array[BoxO]]()
 
@@ -54,35 +54,39 @@ object Sheet {
         pFlips.toArray
     }
 
-    def flipRest(i: Int, j: Int): Unit = {
+    def shouldFlip(i: Int, j: Int): Array[Array[BoxO]] = {
         
-        val placedBox = sheet(i)(j) 
+        val placedBox = sheet(i)(j)
+        val flipMatrix = new ArrayBuffer[Array[BoxO]]
         
 
-        def checkflipped(originalArray: Array[BoxO], array: Array[BoxO], index: Int): Unit =
+        def checkIfFlipped(originalArray: Array[BoxO], array: Array[BoxO], index: Int): Unit =
             var currentIndex = index
             array.headOption match {
                 case Some(currentBox) =>
                     
                     if (currentBox.equals(placedBox)) then
-                        for (k <- 0 until currentIndex) do 
-                            val currentBox = originalArray(k)
-                            flipBoxes(currentBox.x, currentBox.y)
+                        flipMatrix += originalArray.take(currentIndex)
                             
                     
                     else if (!isEmptyBox(currentBox)) then
                         currentIndex += 1
-                        checkflipped(originalArray, array.tail, currentIndex)
+                        checkIfFlipped(originalArray, array.tail, currentIndex)
                 case None => 
             }
         
+        for (array <- possibleFlips(i, j)) do 
+            checkIfFlipped(array, array, 0)        
+            
 
-        for {
-            array <- possibleFlips(i, j)
-        } do {
-            checkflipped(array, array, 0)        
-        }
+        flipMatrix.toArray
     }
+
+    def flipRest(i: Int, j: Int): Unit =
+        for (arrays <- shouldFlip(i, j)) do
+            for (box <- arrays) do
+                flipBoxes(box.x, box.y)
+    
 
     def isPossibleMove(i: Int, j: Int): Boolean = 
         

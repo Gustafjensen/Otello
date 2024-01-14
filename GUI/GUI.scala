@@ -14,10 +14,11 @@ class GUI() extends JFrame {
 
     val nbrBoxes = Sheet.sheetLength
 
-    val boxSize = 50    
+    val boxSize = (nbrBoxes * 6.25).toInt
+
     val board = Array.ofDim[JButton](nbrBoxes, nbrBoxes)
     
-    def initGui(): Unit = {
+    def initGui(): Unit = 
         setLayout(new GridLayout(nbrBoxes, nbrBoxes))
         Sheet.startingSheet()
         
@@ -42,9 +43,9 @@ class GUI() extends JFrame {
         setVisible(true)
 
         updateGui()
-    }
+    
 
-    def handleButtonClick(i: Int, j: Int): Unit = {
+    def handleButtonClick(i: Int, j: Int): Unit = 
         
         if (Sheet.isPossibleMove(i, j)) then 
             Sheet.flipBoxes(i, j)
@@ -56,15 +57,15 @@ class GUI() extends JFrame {
         
         if (Sheet.checkIfOver()) then
             gameOverMessage("Good Game!")
-    }
+    
 
-    def updateGui(): Unit = {
+    def updateGui(): Unit = 
         for (i <- 0 until nbrBoxes) do 
             for ( j <- 0 until nbrBoxes) do
                 val currentBox = Sheet.getBox(i, j)
                 val guiButton = board(i)(j)
 
-                currentBox match {
+                currentBox match 
                     case _: BlackBox => 
                         clear(guiButton)
                         drawCircle(guiButton, Color.BLACK)
@@ -73,17 +74,36 @@ class GUI() extends JFrame {
                         drawCircle(guiButton, new Color(225, 0, 0))
                     case _: EmptyBox => 
                         clear(guiButton)
-                }
-    }
+                
+    
 
-    def drawCircle(button: JButton, color: Color): Unit = {
+    def drawCircle(button: JButton, color: Color): Unit = 
         button.setIcon(new CircleIcon(color, boxSize))
-    }
+    
 
-    def clear(button: JButton): Unit = {
+    def clear(button: JButton): Unit = 
         button.setIcon(null)
-    }
+    
+    
+    private def welcomeMessage(): Unit = 
+        val options: Array[Object] = Array("One Player", "Two Player")
 
+        val choice = JOptionPane.showOptionDialog(
+            null,
+            "Welcome to Otello!",
+            "Select number of players",
+            JOptionPane.DEFAULT_OPTION,
+            JOptionPane.QUESTION_MESSAGE,
+            null,
+            options,
+            options(0)
+        )
+
+        choice match 
+            case 0 =>
+                
+            case 1 =>
+        
     private def gameOverMessage(s: String): Unit = 
         val options: Array[Object] = Array("Play again", "Exit")
 
@@ -98,7 +118,7 @@ class GUI() extends JFrame {
             options(0)
         )
 
-        choice match {
+        choice match 
             case JOptionPane.YES_OPTION => 
                 Sheet.startingSheet()
                 updateGui()
@@ -108,5 +128,5 @@ class GUI() extends JFrame {
             
             case JOptionPane.CLOSED_OPTION =>
                 gameOverMessage("You need to make a choice!")
-        }
+        
 }

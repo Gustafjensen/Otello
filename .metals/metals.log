@@ -4364,3 +4364,1531 @@ org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Unsupported request method: bu
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at java.lang.Thread.run(Thread.java:748)
 [0m
+2024.01.09 09:30:01 INFO  Shutting down server[0m
+2024.01.09 09:30:01 INFO  shutting down Metals[0m
+2024.01.09 09:30:01 INFO  Shut down connection with build server.[0m
+2024.01.09 09:30:01 INFO  BSP server: Jan 09, 2024 9:30:01 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleNotification[0m
+2024.01.09 09:30:01 INFO  BSP server: WARNING: Notification threw an exception: {[0m
+2024.01.09 09:30:01 INFO  BSP server:   "jsonrpc": "2.0",[0m
+2024.01.09 09:30:01 INFO  BSP server:   "method": "build/exit",[0m
+2024.01.09 09:30:01 INFO  BSP server:   "params": null[0m
+2024.01.09 09:30:01 INFO  BSP server: }[0m
+2024.01.09 09:30:01 INFO  BSP server: java.lang.RuntimeException: java.lang.reflect.InvocationTargetException[0m
+2024.01.09 09:30:01 INFO  BSP server: 	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)[0m
+2024.01.09 09:30:01 INFO  BSP server: 	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:152)[0m
+2024.01.09 09:30:01 INFO  BSP server: 	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:220)[0m
+2024.01.09 09:30:01 INFO  BSP server: 	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:187)[0m
+2024.01.09 09:30:01 INFO  BSP server: 	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)[0m
+2024.01.09 09:30:01 INFO  BSP server: 	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)[0m
+2024.01.09 09:30:01 INFO  BSP server: 	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)[0m
+2024.01.09 09:30:01 INFO  BSP server: 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)[0m
+2024.01.09 09:30:01 INFO  BSP server: 	at java.util.concurrent.FutureTask.run(FutureTask.java:264)[0m
+2024.01.09 09:30:01 INFO  BSP server: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)[0m
+2024.01.09 09:30:01 INFO  BSP server: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)[0m
+2024.01.09 09:30:01 INFO  BSP server: 	at java.lang.Thread.run(Thread.java:833)[0m
+2024.01.09 09:30:01 INFO  BSP server: 	at com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:705)[0m
+2024.01.09 09:30:01 INFO  BSP server: 	at com.oracle.svm.core.posix.thread.PosixPlatformThreads.pthreadStartRoutine(PosixPlatformThreads.java:202)[0m
+2024.01.09 09:30:01 INFO  BSP server: Caused by: java.lang.reflect.InvocationTargetException[0m
+2024.01.09 09:30:01 INFO  BSP server: 	at java.lang.reflect.Method.invoke(Method.java:568)[0m
+2024.01.09 09:30:01 INFO  BSP server: 	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)[0m
+2024.01.09 09:30:01 INFO  Cancelling compilation on scala-cli server[0m
+2024.01.09 09:30:01 INFO  BSP server: 	... 13 more[0m
+2024.01.09 09:30:01 INFO  BSP server: Caused by: java.lang.RuntimeException: BSP server not initialized yet[0m
+2024.01.09 09:30:01 INFO  BSP server: 	at scala.sys.package$.error(package.scala:27)[0m
+2024.01.09 09:30:01 INFO  BSP server: 	at scala.build.bsp.BloopSession$Reference.get(BloopSession.scala:61)[0m
+2024.01.09 09:30:01 INFO  BSP server: 	at scala.build.bsp.BspImpl.$anonfun$9(BspImpl.scala:428)[0m
+2024.01.09 09:30:01 INFO  BSP server: 	at scala.build.bsp.BuildServerProxy.onBuildExit(BuildServerProxy.scala:23)[0m
+2024.01.09 09:30:01 INFO  BSP server: 	... 15 more[0m
+2024.01.09 09:30:01 INFO  BSP server: [0m
+2024.01.09 09:30:01 INFO  Cancelling compilation on scala-cli server[0m
+2024.01.09 09:30:01 INFO  Exiting server[0m
+2024.01.09 13:10:18 INFO  Started: Metals version 1.2.0 in folders '/Users/axellangenskiold/scalaProjekt/otello/Otello' for client Visual Studio Code 1.85.0.[0m
+2024.01.09 13:10:21 WARN  No build session currently active to reload.[0m
+2024.01.09 13:10:21 INFO  Attempting to connect to the build server...[0m
+2024.01.09 13:10:21 INFO  Running BSP server List(/Users/axellangenskiold/Library/Application Support/Coursier/bin/.scala-cli.aux, bsp, --json-options, /Users/axellangenskiold/scalaProjekt/otello/Otello/.scala-build/ide-options-v2.json, /Users/axellangenskiold/scalaProjekt/otello/Otello)[0m
+2024.01.09 13:10:21 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/axellangenskiold/scalaProjekt/otello/Otello/.metals/bsp.trace.json or /Users/axellangenskiold/Library/Caches/org.scalameta.metals/bsp.trace.json[0m
+2024.01.09 13:10:30 INFO  time: Connected to build server in 8.26s[0m
+2024.01.09 13:10:30 INFO  Connected to Build server: scala-cli v0.1.12[0m
+2024.01.09 13:10:30 INFO  time: Imported build in 0.15s[0m
+2024.01.09 13:10:31 INFO  no build target found for /Users/axellangenskiold/scalaProjekt/otello/Otello/Program/Sheet.scala. Using presentation compiler with project's scala-library version: 3.3.1[0m
+2024.01.09 13:10:42 INFO  time: indexed workspace in 9.2s[0m
+2024.01.09 13:10:42 INFO  BSP server: Jan 09, 2024 1:10:42 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint request[0m
+2024.01.09 13:10:42 INFO  BSP server: WARNING: Unsupported request method: buildTarget/jvmRunEnvironment[0m
+2024.01.09 13:10:42 INFO  scala-cli should support `buildTarget/jvmRunEnvironment`, but it fails.
+org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Unsupported request method: buildTarget/jvmRunEnvironment
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:209)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:193)
+	at scala.meta.internal.metals.RequestMonitorImpl$$anon$1.consume(ServerLivenessMonitor.scala:39)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[0m
+2024.01.09 13:10:44 INFO  BSP server: Jan 09, 2024 1:10:44 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint request[0m
+2024.01.09 13:10:44 INFO  BSP server: WARNING: Unsupported request method: buildTarget/jvmRunEnvironment[0m
+2024.01.09 13:10:44 INFO  scala-cli should support `buildTarget/jvmRunEnvironment`, but it fails.
+org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Unsupported request method: buildTarget/jvmRunEnvironment
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:209)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:193)
+	at scala.meta.internal.metals.RequestMonitorImpl$$anon$1.consume(ServerLivenessMonitor.scala:39)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[0m
+2024.01.09 13:10:44 INFO  BSP server: Jan 09, 2024 1:10:45 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint request[0m
+2024.01.09 13:10:44 INFO  scala-cli should support `buildTarget/jvmRunEnvironment`, but it fails.
+org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Unsupported request method: buildTarget/jvmRunEnvironment
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:209)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:193)
+	at scala.meta.internal.metals.RequestMonitorImpl$$anon$1.consume(ServerLivenessMonitor.scala:39)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[0m
+2024.01.09 13:10:44 INFO  BSP server: WARNING: Unsupported request method: buildTarget/jvmRunEnvironment[0m
+2024.01.14 14:00:18 INFO  BSP server: Checking https://repo1.maven.org/maven2/org/scala-lang/scala-library/maven-metadata.xml[0m
+2024.01.14 14:00:18 INFO  BSP server: Checked https://repo1.maven.org/maven2/org/scala-lang/scala-library/maven-metadata.xml[0m
+2024.01.14 14:00:18 INFO  BSP server: Checking https://repo1.maven.org/maven2/org/scala-lang/scala3-library_3/maven-metadata.xml[0m
+2024.01.14 14:00:18 INFO  BSP server: Checked https://repo1.maven.org/maven2/org/scala-lang/scala3-library_3/maven-metadata.xml[0m
+2024.01.14 14:00:18 INFO  BSP server: Downloading https://repo1.maven.org/maven2/org/scala-lang/scala3-library_3/maven-metadata.xml[0m
+2024.01.14 14:00:18 INFO  BSP server: Downloaded https://repo1.maven.org/maven2/org/scala-lang/scala3-library_3/maven-metadata.xml[0m
+2024.01.14 14:00:18 INFO  BSP server: Checking https://github.com/VirtusLab/scala-cli-scala-versions/raw/main/scala-versions-v1.json[0m
+2024.01.14 14:00:18 INFO  BSP server: Checked https://github.com/VirtusLab/scala-cli-scala-versions/raw/main/scala-versions-v1.json[0m
+2024.01.14 14:00:18 INFO  BSP server: Downloading https://github.com/VirtusLab/scala-cli-scala-versions/raw/main/scala-versions-v1.json[0m
+2024.01.14 14:00:18 INFO  BSP server: Downloaded https://github.com/VirtusLab/scala-cli-scala-versions/raw/main/scala-versions-v1.json[0m
+2024.01.14 14:00:21 INFO  BSP server: Jan 14, 2024 2:00:21 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint request[0m
+2024.01.14 14:00:21 INFO  BSP server: WARNING: Unsupported request method: buildTarget/jvmRunEnvironment[0m
+2024.01.14 14:00:21 INFO  scala-cli should support `buildTarget/jvmRunEnvironment`, but it fails.
+org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Unsupported request method: buildTarget/jvmRunEnvironment
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:209)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:193)
+	at scala.meta.internal.metals.RequestMonitorImpl$$anon$1.consume(ServerLivenessMonitor.scala:39)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[0m
+2024.01.14 14:15:51 INFO  BSP server: Jan 14, 2024 2:15:51 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint request[0m
+2024.01.14 14:15:51 INFO  scala-cli should support `buildTarget/jvmRunEnvironment`, but it fails.
+org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Unsupported request method: buildTarget/jvmRunEnvironment
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:209)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:193)
+	at scala.meta.internal.metals.RequestMonitorImpl$$anon$1.consume(ServerLivenessMonitor.scala:39)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[0m
+2024.01.14 14:15:51 INFO  BSP server: WARNING: Unsupported request method: buildTarget/jvmRunEnvironment[0m
+2024.01.14 14:17:48 INFO  compiling project_183d125c5c (1 scala source)[0m
+2024.01.14 14:17:51 INFO  time: compiled project_183d125c5c in 3.2s[0m
+2024.01.14 14:17:51 INFO  BSP server: Jan 14, 2024 2:17:51 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint request[0m
+2024.01.14 14:17:51 INFO  BSP server: WARNING: Unsupported request method: buildTarget/jvmRunEnvironment[0m
+2024.01.14 14:17:51 INFO  scala-cli should support `buildTarget/jvmRunEnvironment`, but it fails.
+org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Unsupported request method: buildTarget/jvmRunEnvironment
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:209)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:193)
+	at scala.meta.internal.metals.RequestMonitorImpl$$anon$1.consume(ServerLivenessMonitor.scala:39)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[0m
+2024.01.14 14:18:03 INFO  compiling project_183d125c5c (1 scala source)[0m
+2024.01.14 14:18:03 INFO  time: compiled project_183d125c5c in 0.8s[0m
+2024.01.14 14:18:04 INFO  BSP server: Jan 14, 2024 2:18:04 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint request[0m
+2024.01.14 14:18:04 INFO  BSP server: WARNING: Unsupported request method: buildTarget/jvmRunEnvironment[0m
+2024.01.14 14:18:04 INFO  scala-cli should support `buildTarget/jvmRunEnvironment`, but it fails.
+org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Unsupported request method: buildTarget/jvmRunEnvironment
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:209)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:193)
+	at scala.meta.internal.metals.RequestMonitorImpl$$anon$1.consume(ServerLivenessMonitor.scala:39)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[0m
+jan 14, 2024 2:19:05 EM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+VARNING: Unmatched cancel notification for request id 257
+2024.01.14 14:19:14 INFO  compiling project_183d125c5c (1 scala source)[0m
+2024.01.14 14:19:14 INFO  time: compiled project_183d125c5c in 0.41s[0m
+2024.01.14 14:19:14 INFO  BSP server: Jan 14, 2024 2:19:14 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint request[0m
+2024.01.14 14:19:14 INFO  BSP server: WARNING: Unsupported request method: buildTarget/jvmRunEnvironment[0m
+2024.01.14 14:19:14 INFO  scala-cli should support `buildTarget/jvmRunEnvironment`, but it fails.
+org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Unsupported request method: buildTarget/jvmRunEnvironment
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:209)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:193)
+	at scala.meta.internal.metals.RequestMonitorImpl$$anon$1.consume(ServerLivenessMonitor.scala:39)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[0m
+2024.01.14 14:19:46 INFO  compiling project_183d125c5c (1 scala source)[0m
+2024.01.14 14:19:46 INFO  time: compiled project_183d125c5c in 0.33s[0m
+2024.01.14 14:19:46 INFO  BSP server: Jan 14, 2024 2:19:46 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint request[0m
+2024.01.14 14:19:46 INFO  BSP server: WARNING: Unsupported request method: buildTarget/jvmRunEnvironment[0m
+2024.01.14 14:19:46 INFO  scala-cli should support `buildTarget/jvmRunEnvironment`, but it fails.
+org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Unsupported request method: buildTarget/jvmRunEnvironment
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:209)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:193)
+	at scala.meta.internal.metals.RequestMonitorImpl$$anon$1.consume(ServerLivenessMonitor.scala:39)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[0m
+2024.01.14 14:20:11 INFO  compiling project_183d125c5c (1 scala source)[0m
+2024.01.14 14:20:11 INFO  time: compiled project_183d125c5c in 0.5s[0m
+2024.01.14 14:20:11 INFO  BSP server: Jan 14, 2024 2:20:11 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint request[0m
+2024.01.14 14:20:11 INFO  BSP server: WARNING: Unsupported request method: buildTarget/jvmRunEnvironment[0m
+2024.01.14 14:20:11 INFO  scala-cli should support `buildTarget/jvmRunEnvironment`, but it fails.
+org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Unsupported request method: buildTarget/jvmRunEnvironment
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:209)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:193)
+	at scala.meta.internal.metals.RequestMonitorImpl$$anon$1.consume(ServerLivenessMonitor.scala:39)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[0m
+2024.01.14 14:20:17 INFO  compiling project_183d125c5c (1 scala source)[0m
+2024.01.14 14:20:17 INFO  time: compiled project_183d125c5c in 0.25s[0m
+2024.01.14 14:20:17 INFO  BSP server: Jan 14, 2024 2:20:17 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint request[0m
+2024.01.14 14:20:17 INFO  BSP server: WARNING: Unsupported request method: buildTarget/jvmRunEnvironment[0m
+2024.01.14 14:20:17 INFO  scala-cli should support `buildTarget/jvmRunEnvironment`, but it fails.
+org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Unsupported request method: buildTarget/jvmRunEnvironment
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:209)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:193)
+	at scala.meta.internal.metals.RequestMonitorImpl$$anon$1.consume(ServerLivenessMonitor.scala:39)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[0m
+jan 14, 2024 2:21:21 EM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+VARNING: Unmatched cancel notification for request id 502
+2024.01.14 14:21:49 INFO  compiling project_183d125c5c (1 scala source)[0m
+2024.01.14 14:21:49 INFO  time: compiled project_183d125c5c in 0.72s[0m
+2024.01.14 14:21:50 INFO  BSP server: Jan 14, 2024 2:21:50 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint request[0m
+2024.01.14 14:21:50 INFO  BSP server: WARNING: Unsupported request method: buildTarget/jvmRunEnvironment[0m
+2024.01.14 14:21:50 INFO  scala-cli should support `buildTarget/jvmRunEnvironment`, but it fails.
+org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Unsupported request method: buildTarget/jvmRunEnvironment
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:209)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:193)
+	at scala.meta.internal.metals.RequestMonitorImpl$$anon$1.consume(ServerLivenessMonitor.scala:39)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[0m
+jan 14, 2024 2:22:07 EM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+VARNING: Unmatched cancel notification for request id 683
+jan 14, 2024 2:23:41 EM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+VARNING: Unmatched cancel notification for request id 937
+2024.01.14 14:29:45 INFO  compiling project_183d125c5c (1 scala source)[0m
+2024.01.14 14:29:46 INFO  time: compiled project_183d125c5c in 1.19s[0m
+2024.01.14 14:29:46 INFO  BSP server: Jan 14, 2024 2:29:46 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint request[0m
+2024.01.14 14:29:46 INFO  BSP server: WARNING: Unsupported request method: buildTarget/jvmRunEnvironment[0m
+2024.01.14 14:29:46 INFO  scala-cli should support `buildTarget/jvmRunEnvironment`, but it fails.
+org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Unsupported request method: buildTarget/jvmRunEnvironment
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:209)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:193)
+	at scala.meta.internal.metals.RequestMonitorImpl$$anon$1.consume(ServerLivenessMonitor.scala:39)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[0m
+2024.01.14 14:35:13 INFO  compiling project_183d125c5c (1 scala source)[0m
+2024.01.14 14:35:15 INFO  time: compiled project_183d125c5c in 2.18s[0m
+2024.01.14 14:35:15 INFO  BSP server: Jan 14, 2024 2:35:15 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint request[0m
+2024.01.14 14:35:15 INFO  BSP server: WARNING: Unsupported request method: buildTarget/jvmRunEnvironment[0m
+2024.01.14 14:35:15 INFO  scala-cli should support `buildTarget/jvmRunEnvironment`, but it fails.
+org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Unsupported request method: buildTarget/jvmRunEnvironment
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:209)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:193)
+	at scala.meta.internal.metals.RequestMonitorImpl$$anon$1.consume(ServerLivenessMonitor.scala:39)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[0m
+2024.01.14 14:35:41 INFO  compiling project_183d125c5c (1 scala source)[0m
+2024.01.14 14:35:42 INFO  time: compiled project_183d125c5c in 1.17s[0m
+2024.01.14 14:35:42 INFO  BSP server: Jan 14, 2024 2:35:42 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint request[0m
+2024.01.14 14:35:42 INFO  BSP server: WARNING: Unsupported request method: buildTarget/jvmRunEnvironment[0m
+2024.01.14 14:35:42 INFO  scala-cli should support `buildTarget/jvmRunEnvironment`, but it fails.
+org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Unsupported request method: buildTarget/jvmRunEnvironment
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:209)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:193)
+	at scala.meta.internal.metals.RequestMonitorImpl$$anon$1.consume(ServerLivenessMonitor.scala:39)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[0m
+jan 14, 2024 2:36:01 EM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+VARNING: Unmatched cancel notification for request id 1570
+Exception in thread "pool-5-thread-1" java.lang.Error: java.lang.InterruptedException
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1155)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.InterruptedException
+	at scala.meta.internal.metals.FutureCancelToken.checkCanceled(FutureCancelToken.scala:29)
+	at scala.meta.internal.pc.CompilerAccess.onCompilerJobQueue$$anonfun$1(CompilerAccess.scala:230)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:152)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	... 2 more
+2024.01.14 14:36:01 INFO  compiling project_183d125c5c (1 scala source)[0m
+2024.01.14 14:36:01 INFO  Deduplicating compilation of project_183d125c5c from bsp client 'scala-cli 0.1.12' (since 121h 25m 38.624s)[0m
+2024.01.14 14:36:01 INFO  compiling project_183d125c5c (1 scala source)[0m
+2024.01.14 14:36:01 INFO  time: compiled project_183d125c5c in 0.18s[0m
+2024.01.14 14:36:02 INFO  BSP server: Jan 14, 2024 2:36:02 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint request[0m
+2024.01.14 14:36:02 INFO  BSP server: WARNING: Unsupported request method: buildTarget/jvmRunEnvironment[0m
+2024.01.14 14:36:02 INFO  scala-cli should support `buildTarget/jvmRunEnvironment`, but it fails.
+org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Unsupported request method: buildTarget/jvmRunEnvironment
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:209)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:193)
+	at scala.meta.internal.metals.RequestMonitorImpl$$anon$1.consume(ServerLivenessMonitor.scala:39)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[0m
+2024.01.14 14:36:02 INFO  BSP server: Jan 14, 2024 2:36:02 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint request[0m
+2024.01.14 14:36:02 INFO  BSP server: WARNING: Unsupported request method: buildTarget/jvmRunEnvironment[0m
+2024.01.14 14:36:02 INFO  scala-cli should support `buildTarget/jvmRunEnvironment`, but it fails.
+org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Unsupported request method: buildTarget/jvmRunEnvironment
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:209)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:193)
+	at scala.meta.internal.metals.RequestMonitorImpl$$anon$1.consume(ServerLivenessMonitor.scala:39)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[0m
+2024.01.14 14:36:02 WARN  Could not load snapshot text for /Users/axellangenskiold/scalaProjekt/otello/Otello/GUI/GUI.scala[0m
+2024.01.14 14:36:02 INFO  compiling project_183d125c5c (1 scala source)[0m
+2024.01.14 14:36:02 INFO  Deduplicating compilation of project_183d125c5c from bsp client 'scala-cli 0.1.12' (since 121h 25m 40.042s)[0m
+2024.01.14 14:36:02 INFO  compiling project_183d125c5c (1 scala source)[0m
+2024.01.14 14:36:03 INFO  time: compiled project_183d125c5c in 0.53s[0m
+2024.01.14 14:36:04 INFO  BSP server: Jan 14, 2024 2:36:04 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint request[0m
+2024.01.14 14:36:04 INFO  BSP server: WARNING: Unsupported request method: buildTarget/jvmRunEnvironment[0m
+2024.01.14 14:36:04 INFO  scala-cli should support `buildTarget/jvmRunEnvironment`, but it fails.
+org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Unsupported request method: buildTarget/jvmRunEnvironment
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:209)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:193)
+	at scala.meta.internal.metals.RequestMonitorImpl$$anon$1.consume(ServerLivenessMonitor.scala:39)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[0m
+2024.01.14 14:36:04 INFO  BSP server: Jan 14, 2024 2:36:04 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint request[0m
+2024.01.14 14:36:04 INFO  scala-cli should support `buildTarget/jvmRunEnvironment`, but it fails.
+org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Unsupported request method: buildTarget/jvmRunEnvironment
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:209)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:193)
+	at scala.meta.internal.metals.RequestMonitorImpl$$anon$1.consume(ServerLivenessMonitor.scala:39)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[0m
+2024.01.14 14:36:04 INFO  BSP server: WARNING: Unsupported request method: buildTarget/jvmRunEnvironment[0m
+2024.01.14 14:39:06 INFO  BSP server: Jan 14, 2024 2:39:06 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint request[0m
+2024.01.14 14:39:06 INFO  BSP server: WARNING: Unsupported request method: buildTarget/jvmRunEnvironment[0m
+2024.01.14 14:39:06 INFO  scala-cli should support `buildTarget/jvmRunEnvironment`, but it fails.
+org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Unsupported request method: buildTarget/jvmRunEnvironment
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:209)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:193)
+	at scala.meta.internal.metals.RequestMonitorImpl$$anon$1.consume(ServerLivenessMonitor.scala:39)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[0m
+2024.01.14 14:40:57 INFO  compiling project_183d125c5c (1 scala source)[0m
+2024.01.14 14:40:57 INFO  time: compiled project_183d125c5c in 0.1s[0m
+2024.01.14 14:40:57 INFO  BSP server: Jan 14, 2024 2:40:57 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint request[0m
+2024.01.14 14:40:57 INFO  BSP server: WARNING: Unsupported request method: buildTarget/jvmRunEnvironment[0m
+2024.01.14 14:40:57 INFO  scala-cli should support `buildTarget/jvmRunEnvironment`, but it fails.
+org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Unsupported request method: buildTarget/jvmRunEnvironment
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:209)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:193)
+	at scala.meta.internal.metals.RequestMonitorImpl$$anon$1.consume(ServerLivenessMonitor.scala:39)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[0m
+2024.01.14 14:47:52 INFO  compiling project_183d125c5c (1 scala source)[0m
+2024.01.14 14:47:52 INFO  time: compiled project_183d125c5c in 0.29s[0m
+2024.01.14 14:47:53 INFO  BSP server: Jan 14, 2024 2:47:53 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint request[0m
+2024.01.14 14:47:53 INFO  BSP server: WARNING: Unsupported request method: buildTarget/jvmRunEnvironment[0m
+2024.01.14 14:47:53 INFO  scala-cli should support `buildTarget/jvmRunEnvironment`, but it fails.
+org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Unsupported request method: buildTarget/jvmRunEnvironment
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:209)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:193)
+	at scala.meta.internal.metals.RequestMonitorImpl$$anon$1.consume(ServerLivenessMonitor.scala:39)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[0m
+2024.01.14 14:49:10 INFO  compiling project_183d125c5c (1 scala source)[0m
+2024.01.14 14:49:10 INFO  time: compiled project_183d125c5c in 0.11s[0m
+2024.01.14 14:49:10 INFO  BSP server: Jan 14, 2024 2:49:10 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint request[0m
+2024.01.14 14:49:10 INFO  BSP server: WARNING: Unsupported request method: buildTarget/jvmRunEnvironment[0m
+2024.01.14 14:49:10 INFO  scala-cli should support `buildTarget/jvmRunEnvironment`, but it fails.
+org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Unsupported request method: buildTarget/jvmRunEnvironment
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:209)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:193)
+	at scala.meta.internal.metals.RequestMonitorImpl$$anon$1.consume(ServerLivenessMonitor.scala:39)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[0m
+2024.01.14 14:49:25 INFO  compiling project_183d125c5c (1 scala source)[0m
+2024.01.14 14:49:25 INFO  time: compiled project_183d125c5c in 0.12s[0m
+2024.01.14 14:49:25 INFO  BSP server: Jan 14, 2024 2:49:25 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint request[0m
+2024.01.14 14:49:25 INFO  BSP server: WARNING: Unsupported request method: buildTarget/jvmRunEnvironment[0m
+2024.01.14 14:49:25 INFO  scala-cli should support `buildTarget/jvmRunEnvironment`, but it fails.
+org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Unsupported request method: buildTarget/jvmRunEnvironment
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:209)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:193)
+	at scala.meta.internal.metals.RequestMonitorImpl$$anon$1.consume(ServerLivenessMonitor.scala:39)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[0m
+2024.01.14 14:50:03 WARN  no build target for: /Users/axellangenskiold/scalaProjekt/otello/Otello/Program/HardPlayer.scala[0m
+jan 14, 2024 2:50:13 EM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+VARNING: Unmatched cancel notification for request id 1815
+2024.01.14 14:50:14 WARN  Could not find semantic tokens for: file:///Users/axellangenskiold/scalaProjekt/otello/Otello/Program/HardPlayer.scala[0m
+2024.01.14 14:50:14 WARN  Could not find semantic tokens for: file:///Users/axellangenskiold/scalaProjekt/otello/Otello/Program/HardPlayer.scala[0m
+2024.01.14 14:50:49 INFO  BSP server: Jan 14, 2024 2:50:49 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint request[0m
+2024.01.14 14:50:49 INFO  Cancelling compilation on scala-cli server[0m
+2024.01.14 14:50:49 INFO  BSP server: WARNING: Unsupported request method: buildTarget/jvmRunEnvironment[0m
+2024.01.14 14:50:49 INFO  BSP server: Jan 14, 2024 2:50:49 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation[0m
+2024.01.14 14:50:49 INFO  BSP server: WARNING: Unmatched cancel notification for request id null[0m
+2024.01.14 14:50:49 INFO  scala-cli should support `buildTarget/jvmRunEnvironment`, but it fails.
+org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Unsupported request method: buildTarget/jvmRunEnvironment
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:209)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:193)
+	at scala.meta.internal.metals.RequestMonitorImpl$$anon$1.consume(ServerLivenessMonitor.scala:39)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[0m
+2024.01.14 14:50:49 INFO  compiling project_183d125c5c (1 scala source)[0m
+2024.01.14 14:50:50 INFO  Cancelling compilation on scala-cli server[0m
+2024.01.14 14:50:49 INFO  BSP server: Jan 14, 2024 2:50:50 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation[0m
+2024.01.14 14:50:49 INFO  BSP server: WARNING: Unmatched cancel notification for request id null[0m
+2024.01.14 14:50:49 INFO  BSP server: Jan 14, 2024 2:50:50 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint request[0m
+2024.01.14 14:50:49 INFO  BSP server: WARNING: Unsupported request method: buildTarget/jvmRunEnvironment[0m
+2024.01.14 14:50:50 INFO  scala-cli should support `buildTarget/jvmRunEnvironment`, but it fails.
+org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Unsupported request method: buildTarget/jvmRunEnvironment
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:209)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:193)
+	at scala.meta.internal.metals.RequestMonitorImpl$$anon$1.consume(ServerLivenessMonitor.scala:39)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[0m
+2024.01.14 14:50:50 INFO  compiling project_183d125c5c (1 scala source)[0m
+2024.01.14 14:50:50 INFO  Deduplicating compilation of project_183d125c5c from bsp client 'scala-cli 0.1.12' (since 121h 40m 27.758s)[0m
+2024.01.14 14:50:50 INFO  compiling project_183d125c5c (1 scala source)[0m
+2024.01.14 14:50:51 INFO  BSP server: Jan 14, 2024 2:50:51 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint request[0m
+2024.01.14 14:50:51 INFO  BSP server: WARNING: Unsupported request method: buildTarget/jvmRunEnvironment[0m
+2024.01.14 14:50:51 INFO  time: indexed workspace in 1.96s[0m
+2024.01.14 14:50:55 INFO  no build target found for /Users/axellangenskiold/scalaProjekt/otello/Otello/Program/Opponent.scala. Using presentation compiler with project's scala-library version: 3.1.3[0m
+2024.01.14 14:50:55 INFO  time: compiled project_183d125c5c in 4.61s[0m
+2024.01.14 14:50:55 INFO  scala-cli should support `buildTarget/jvmRunEnvironment`, but it fails.
+org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Unsupported request method: buildTarget/jvmRunEnvironment
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:209)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:193)
+	at scala.meta.internal.metals.RequestMonitorImpl$$anon$1.consume(ServerLivenessMonitor.scala:39)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[0m
+2024.01.14 14:50:55 INFO  BSP server: Jan 14, 2024 2:50:55 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint request[0m
+2024.01.14 14:50:55 INFO  BSP server: WARNING: Unsupported request method: buildTarget/jvmRunEnvironment[0m
+2024.01.14 14:50:55 INFO  scala-cli should support `buildTarget/jvmRunEnvironment`, but it fails.
+org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Unsupported request method: buildTarget/jvmRunEnvironment
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:209)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:193)
+	at scala.meta.internal.metals.RequestMonitorImpl$$anon$1.consume(ServerLivenessMonitor.scala:39)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[0m
+2024.01.14 14:50:55 INFO  BSP server: Jan 14, 2024 2:50:56 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint request[0m
+2024.01.14 14:50:55 INFO  BSP server: WARNING: Unsupported request method: buildTarget/jvmRunEnvironment[0m
+2024.01.14 14:50:56 INFO  scala-cli should support `buildTarget/jvmRunEnvironment`, but it fails.
+org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Unsupported request method: buildTarget/jvmRunEnvironment
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:209)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:193)
+	at scala.meta.internal.metals.RequestMonitorImpl$$anon$1.consume(ServerLivenessMonitor.scala:39)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[0m
+2024.01.14 14:50:56 INFO  time: indexed workspace in 0.71s[0m
+2024.01.14 14:50:57 INFO  BSP server: Jan 14, 2024 2:50:57 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint request[0m
+2024.01.14 14:50:57 INFO  BSP server: WARNING: Unsupported request method: buildTarget/jvmRunEnvironment[0m
+2024.01.14 14:50:57 INFO  scala-cli should support `buildTarget/jvmRunEnvironment`, but it fails.
+org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Unsupported request method: buildTarget/jvmRunEnvironment
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:209)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:193)
+	at scala.meta.internal.metals.RequestMonitorImpl$$anon$1.consume(ServerLivenessMonitor.scala:39)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[0m
+jan 14, 2024 2:51:01 EM scala.meta.internal.mtags.SymbolIndexBucket addMtagsSourceFile
+VARNING: Error indexing /Users/axellangenskiold/scalaProjekt/otello/Otello/Program/Player.scala
+java.nio.file.NoSuchFileException: /Users/axellangenskiold/scalaProjekt/otello/Otello/Program/Player.scala
+	at sun.nio.fs.UnixException.translateToIOException(UnixException.java:86)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:102)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:107)
+	at sun.nio.fs.UnixFileSystemProvider.newByteChannel(UnixFileSystemProvider.java:214)
+	at java.nio.file.Files.newByteChannel(Files.java:361)
+	at java.nio.file.Files.newByteChannel(Files.java:407)
+	at java.nio.file.Files.readAllBytes(Files.java:3152)
+	at scala.meta.internal.io.PlatformFileIO$.slurp(PlatformFileIO.scala:45)
+	at scala.meta.internal.io.FileIO$.slurp(FileIO.scala:24)
+	at scala.meta.internal.mtags.ScalametaCommonEnrichments$XtensionAbsolutePath.toInput(ScalametaCommonEnrichments.scala:415)
+	at scala.meta.internal.mtags.Mtags.index(Mtags.scala:67)
+	at scala.meta.internal.mtags.Mtags.allSymbols(Mtags.scala:21)
+	at scala.meta.internal.mtags.SymbolIndexBucket.allSymbols(SymbolIndexBucket.scala:242)
+	at scala.meta.internal.mtags.SymbolIndexBucket.addMtagsSourceFile(SymbolIndexBucket.scala:253)
+	at scala.meta.internal.mtags.SymbolIndexBucket.$anonfun$query0$1(SymbolIndexBucket.scala:168)
+	at scala.meta.internal.mtags.SymbolIndexBucket.$anonfun$query0$1$adapted(SymbolIndexBucket.scala:168)
+	at scala.collection.immutable.Set$Set2.foreach(Set.scala:210)
+	at scala.meta.internal.mtags.SymbolIndexBucket.query0(SymbolIndexBucket.scala:168)
+	at scala.meta.internal.mtags.SymbolIndexBucket.query(SymbolIndexBucket.scala:141)
+	at scala.meta.internal.mtags.OnDemandSymbolIndex.$anonfun$findSymbolDefinition$1(OnDemandSymbolIndex.scala:141)
+	at scala.collection.immutable.List.flatMap(List.scala:293)
+	at scala.meta.internal.mtags.OnDemandSymbolIndex.findSymbolDefinition(OnDemandSymbolIndex.scala:141)
+	at scala.meta.internal.mtags.OnDemandSymbolIndex.definition(OnDemandSymbolIndex.scala:48)
+	at scala.meta.internal.metals.Docstrings.indexSymbol(Docstrings.scala:118)
+	at scala.meta.internal.metals.Docstrings.documentation(Docstrings.scala:44)
+	at scala.meta.internal.metals.MetalsSymbolSearch.documentation(MetalsSymbolSearch.scala:43)
+	at scala.meta.internal.mtags.MtagsEnrichments$.symbolDocumentation(MtagsEnrichments.scala:253)
+	at scala.meta.internal.pc.CompletionItemResolver$.resolve(CompletionItemResolver.scala:27)
+	at scala.meta.internal.pc.ScalaPresentationCompiler.completionItemResolve$$anonfun$1(ScalaPresentationCompiler.scala:205)
+	at scala.meta.internal.pc.CompilerAccess.withSharedCompiler(CompilerAccess.scala:146)
+	at scala.meta.internal.pc.CompilerAccess.withNonInterruptableCompiler$$anonfun$1(CompilerAccess.scala:132)
+	at scala.meta.internal.pc.CompilerAccess.onCompilerJobQueue$$anonfun$1(CompilerAccess.scala:232)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:152)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+jan 14, 2024 2:51:01 EM scala.meta.internal.mtags.SymbolIndexBucket addMtagsSourceFile
+VARNING: Error indexing /Users/axellangenskiold/scalaProjekt/otello/Otello/Program/Player.scala
+java.nio.file.NoSuchFileException: /Users/axellangenskiold/scalaProjekt/otello/Otello/Program/Player.scala
+	at sun.nio.fs.UnixException.translateToIOException(UnixException.java:86)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:102)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:107)
+	at sun.nio.fs.UnixFileSystemProvider.newByteChannel(UnixFileSystemProvider.java:214)
+	at java.nio.file.Files.newByteChannel(Files.java:361)
+	at java.nio.file.Files.newByteChannel(Files.java:407)
+	at java.nio.file.Files.readAllBytes(Files.java:3152)
+	at scala.meta.internal.io.PlatformFileIO$.slurp(PlatformFileIO.scala:45)
+	at scala.meta.internal.io.FileIO$.slurp(FileIO.scala:24)
+	at scala.meta.internal.mtags.ScalametaCommonEnrichments$XtensionAbsolutePath.toInput(ScalametaCommonEnrichments.scala:415)
+	at scala.meta.internal.mtags.Mtags.index(Mtags.scala:67)
+	at scala.meta.internal.mtags.Mtags.allSymbols(Mtags.scala:21)
+	at scala.meta.internal.mtags.SymbolIndexBucket.allSymbols(SymbolIndexBucket.scala:242)
+	at scala.meta.internal.mtags.SymbolIndexBucket.addMtagsSourceFile(SymbolIndexBucket.scala:253)
+	at scala.meta.internal.mtags.SymbolIndexBucket.addMtagsSourceFile(SymbolIndexBucket.scala:264)
+	at scala.meta.internal.mtags.SymbolIndexBucket.$anonfun$query0$1(SymbolIndexBucket.scala:168)
+	at scala.meta.internal.mtags.SymbolIndexBucket.$anonfun$query0$1$adapted(SymbolIndexBucket.scala:168)
+	at scala.collection.immutable.Set$Set2.foreach(Set.scala:210)
+	at scala.meta.internal.mtags.SymbolIndexBucket.query0(SymbolIndexBucket.scala:168)
+	at scala.meta.internal.mtags.SymbolIndexBucket.query(SymbolIndexBucket.scala:141)
+	at scala.meta.internal.mtags.OnDemandSymbolIndex.$anonfun$findSymbolDefinition$1(OnDemandSymbolIndex.scala:141)
+	at scala.collection.immutable.List.flatMap(List.scala:293)
+	at scala.meta.internal.mtags.OnDemandSymbolIndex.findSymbolDefinition(OnDemandSymbolIndex.scala:141)
+	at scala.meta.internal.mtags.OnDemandSymbolIndex.definition(OnDemandSymbolIndex.scala:48)
+	at scala.meta.internal.metals.Docstrings.indexSymbol(Docstrings.scala:118)
+	at scala.meta.internal.metals.Docstrings.documentation(Docstrings.scala:44)
+	at scala.meta.internal.metals.MetalsSymbolSearch.documentation(MetalsSymbolSearch.scala:43)
+	at scala.meta.internal.mtags.MtagsEnrichments$.symbolDocumentation(MtagsEnrichments.scala:253)
+	at scala.meta.internal.pc.CompletionItemResolver$.resolve(CompletionItemResolver.scala:27)
+	at scala.meta.internal.pc.ScalaPresentationCompiler.completionItemResolve$$anonfun$1(ScalaPresentationCompiler.scala:205)
+	at scala.meta.internal.pc.CompilerAccess.withSharedCompiler(CompilerAccess.scala:146)
+	at scala.meta.internal.pc.CompilerAccess.withNonInterruptableCompiler$$anonfun$1(CompilerAccess.scala:132)
+	at scala.meta.internal.pc.CompilerAccess.onCompilerJobQueue$$anonfun$1(CompilerAccess.scala:232)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:152)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+2024.01.14 14:52:22 INFO  BSP server: Jan 14, 2024 2:52:22 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint request[0m
+2024.01.14 14:52:22 INFO  BSP server: WARNING: Unsupported request method: buildTarget/jvmRunEnvironment[0m
+2024.01.14 14:52:22 INFO  scala-cli should support `buildTarget/jvmRunEnvironment`, but it fails.
+org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Unsupported request method: buildTarget/jvmRunEnvironment
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:209)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:193)
+	at scala.meta.internal.metals.RequestMonitorImpl$$anon$1.consume(ServerLivenessMonitor.scala:39)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[0m
+2024.01.14 15:00:14 INFO  compiling project_183d125c5c (1 scala source)[0m
+2024.01.14 15:00:14 INFO  time: compiled project_183d125c5c in 0.31s[0m
+2024.01.14 15:00:14 INFO  BSP server: Jan 14, 2024 3:00:14 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint request[0m
+2024.01.14 15:00:14 INFO  BSP server: WARNING: Unsupported request method: buildTarget/jvmRunEnvironment[0m
+2024.01.14 15:00:14 INFO  scala-cli should support `buildTarget/jvmRunEnvironment`, but it fails.
+org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Unsupported request method: buildTarget/jvmRunEnvironment
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:209)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:193)
+	at scala.meta.internal.metals.RequestMonitorImpl$$anon$1.consume(ServerLivenessMonitor.scala:39)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[0m
+2024.01.14 15:03:00 INFO  compiling project_183d125c5c (1 scala source)[0m
+2024.01.14 15:03:00 INFO  time: compiled project_183d125c5c in 0.26s[0m
+2024.01.14 15:03:00 INFO  BSP server: Jan 14, 2024 3:03:00 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint request[0m
+2024.01.14 15:03:00 INFO  BSP server: WARNING: Unsupported request method: buildTarget/jvmRunEnvironment[0m
+2024.01.14 15:03:00 INFO  scala-cli should support `buildTarget/jvmRunEnvironment`, but it fails.
+org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Unsupported request method: buildTarget/jvmRunEnvironment
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:209)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:193)
+	at scala.meta.internal.metals.RequestMonitorImpl$$anon$1.consume(ServerLivenessMonitor.scala:39)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[0m
+2024.01.14 15:03:21 INFO  compiling project_183d125c5c (1 scala source)[0m
+2024.01.14 15:03:21 INFO  time: compiled project_183d125c5c in 0.16s[0m
+2024.01.14 15:03:21 INFO  BSP server: Jan 14, 2024 3:03:21 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint request[0m
+2024.01.14 15:03:21 INFO  BSP server: WARNING: Unsupported request method: buildTarget/jvmRunEnvironment[0m
+2024.01.14 15:03:21 INFO  scala-cli should support `buildTarget/jvmRunEnvironment`, but it fails.
+org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Unsupported request method: buildTarget/jvmRunEnvironment
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:209)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:193)
+	at scala.meta.internal.metals.RequestMonitorImpl$$anon$1.consume(ServerLivenessMonitor.scala:39)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[0m
+2024.01.14 15:03:37 INFO  compiling project_183d125c5c (1 scala source)[0m
+2024.01.14 15:03:37 INFO  time: compiled project_183d125c5c in 0.18s[0m
+2024.01.14 15:03:37 INFO  BSP server: Jan 14, 2024 3:03:37 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint request[0m
+2024.01.14 15:03:37 INFO  BSP server: WARNING: Unsupported request method: buildTarget/jvmRunEnvironment[0m
+2024.01.14 15:03:37 INFO  scala-cli should support `buildTarget/jvmRunEnvironment`, but it fails.
+org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Unsupported request method: buildTarget/jvmRunEnvironment
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:209)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:193)
+	at scala.meta.internal.metals.RequestMonitorImpl$$anon$1.consume(ServerLivenessMonitor.scala:39)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[0m
+2024.01.14 15:09:52 INFO  compiling project_183d125c5c (1 scala source)[0m
+2024.01.14 15:09:52 INFO  time: compiled project_183d125c5c in 0.18s[0m
+2024.01.14 15:09:52 INFO  BSP server: Jan 14, 2024 3:09:52 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint request[0m
+2024.01.14 15:09:52 INFO  BSP server: WARNING: Unsupported request method: buildTarget/jvmRunEnvironment[0m
+2024.01.14 15:09:52 INFO  scala-cli should support `buildTarget/jvmRunEnvironment`, but it fails.
+org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Unsupported request method: buildTarget/jvmRunEnvironment
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:209)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:193)
+	at scala.meta.internal.metals.RequestMonitorImpl$$anon$1.consume(ServerLivenessMonitor.scala:39)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[0m
+2024.01.14 15:09:54 INFO  compiling project_183d125c5c (1 scala source)[0m
+2024.01.14 15:09:54 INFO  time: compiled project_183d125c5c in 0.2s[0m
+2024.01.14 15:09:55 INFO  BSP server: Jan 14, 2024 3:09:55 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint request[0m
+2024.01.14 15:09:55 INFO  BSP server: WARNING: Unsupported request method: buildTarget/jvmRunEnvironment[0m
+2024.01.14 15:09:55 INFO  scala-cli should support `buildTarget/jvmRunEnvironment`, but it fails.
+org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Unsupported request method: buildTarget/jvmRunEnvironment
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:209)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:193)
+	at scala.meta.internal.metals.RequestMonitorImpl$$anon$1.consume(ServerLivenessMonitor.scala:39)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[0m
+2024.01.14 15:09:54 INFO  compiling project_183d125c5c (1 scala source)[0m
+2024.01.14 15:09:56 INFO  time: compiled project_183d125c5c in 0.29s[0m
+2024.01.14 15:09:56 INFO  BSP server: Jan 14, 2024 3:09:56 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint request[0m
+2024.01.14 15:09:56 INFO  BSP server: WARNING: Unsupported request method: buildTarget/jvmRunEnvironment[0m
+2024.01.14 15:09:56 INFO  scala-cli should support `buildTarget/jvmRunEnvironment`, but it fails.
+org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Unsupported request method: buildTarget/jvmRunEnvironment
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:209)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:193)
+	at scala.meta.internal.metals.RequestMonitorImpl$$anon$1.consume(ServerLivenessMonitor.scala:39)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[0m
+jan 14, 2024 3:11:26 EM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+VARNING: Unmatched cancel notification for request id 2761
+2024.01.14 15:12:11 INFO  compiling project_183d125c5c (2 scala sources)[0m
+2024.01.14 15:12:11 INFO  time: compiled project_183d125c5c in 0.31s[0m
+2024.01.14 15:12:11 INFO  BSP server: Jan 14, 2024 3:12:11 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint request[0m
+2024.01.14 15:12:11 INFO  BSP server: WARNING: Unsupported request method: buildTarget/jvmRunEnvironment[0m
+2024.01.14 15:12:11 INFO  scala-cli should support `buildTarget/jvmRunEnvironment`, but it fails.
+org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Unsupported request method: buildTarget/jvmRunEnvironment
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:209)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:193)
+	at scala.meta.internal.metals.RequestMonitorImpl$$anon$1.consume(ServerLivenessMonitor.scala:39)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[0m
+jan 14, 2024 3:12:38 EM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+VARNING: Unmatched cancel notification for request id 2837
+2024.01.14 15:13:39 INFO  compiling project_183d125c5c (2 scala sources)[0m
+2024.01.14 15:13:41 INFO  time: compiled project_183d125c5c in 1.49s[0m
+2024.01.14 15:13:41 INFO  BSP server: Jan 14, 2024 3:13:41 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint request[0m
+2024.01.14 15:13:41 INFO  BSP server: WARNING: Unsupported request method: buildTarget/jvmRunEnvironment[0m
+2024.01.14 15:13:41 INFO  scala-cli should support `buildTarget/jvmRunEnvironment`, but it fails.
+org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Unsupported request method: buildTarget/jvmRunEnvironment
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:209)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:193)
+	at scala.meta.internal.metals.RequestMonitorImpl$$anon$1.consume(ServerLivenessMonitor.scala:39)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[0m
+Exception in thread "pool-9-thread-1" java.lang.Error: java.lang.InterruptedException
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1155)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.InterruptedException
+	at scala.meta.internal.metals.FutureCancelToken.checkCanceled(FutureCancelToken.scala:29)
+	at scala.meta.internal.pc.CompilerAccess.onCompilerJobQueue$$anonfun$1(CompilerAccess.scala:230)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:152)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	... 2 more
+Exception in thread "pool-9-thread-2" java.lang.Error: java.lang.InterruptedException
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1155)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.InterruptedException
+	at scala.meta.internal.metals.FutureCancelToken.checkCanceled(FutureCancelToken.scala:29)
+	at scala.meta.internal.pc.CompilerAccess.onCompilerJobQueue$$anonfun$1(CompilerAccess.scala:230)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:152)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	... 2 more
+2024.01.14 15:14:11 INFO  compiling project_183d125c5c (2 scala sources)[0m
+2024.01.14 15:14:11 INFO  time: compiled project_183d125c5c in 0.41s[0m
+2024.01.14 15:14:11 INFO  BSP server: Jan 14, 2024 3:14:11 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint request[0m
+2024.01.14 15:14:11 INFO  BSP server: WARNING: Unsupported request method: buildTarget/jvmRunEnvironment[0m
+2024.01.14 15:14:11 INFO  scala-cli should support `buildTarget/jvmRunEnvironment`, but it fails.
+org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Unsupported request method: buildTarget/jvmRunEnvironment
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:209)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:193)
+	at scala.meta.internal.metals.RequestMonitorImpl$$anon$1.consume(ServerLivenessMonitor.scala:39)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[0m
+2024.01.14 15:14:11 INFO  compiling project_183d125c5c (2 scala sources)[0m
+2024.01.14 15:14:11 INFO  time: compiled project_183d125c5c in 0.35s[0m
+2024.01.14 15:14:11 INFO  BSP server: Jan 14, 2024 3:14:12 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint request[0m
+2024.01.14 15:14:11 INFO  BSP server: WARNING: Unsupported request method: buildTarget/jvmRunEnvironment[0m
+2024.01.14 15:14:12 INFO  scala-cli should support `buildTarget/jvmRunEnvironment`, but it fails.
+org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Unsupported request method: buildTarget/jvmRunEnvironment
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:209)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:193)
+	at scala.meta.internal.metals.RequestMonitorImpl$$anon$1.consume(ServerLivenessMonitor.scala:39)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[0m
+jan 14, 2024 3:15:32 EM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+VARNING: Unmatched cancel notification for request id 3232
+2024.01.14 15:15:52 INFO  compiling project_183d125c5c (2 scala sources)[0m
+2024.01.14 15:15:52 INFO  time: compiled project_183d125c5c in 0.42s[0m
+2024.01.14 15:15:52 INFO  BSP server: Jan 14, 2024 3:15:52 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint request[0m
+2024.01.14 15:15:52 INFO  BSP server: WARNING: Unsupported request method: buildTarget/jvmRunEnvironment[0m
+2024.01.14 15:15:53 INFO  scala-cli should support `buildTarget/jvmRunEnvironment`, but it fails.
+org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Unsupported request method: buildTarget/jvmRunEnvironment
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:209)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:193)
+	at scala.meta.internal.metals.RequestMonitorImpl$$anon$1.consume(ServerLivenessMonitor.scala:39)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[0m
+jan 14, 2024 3:17:03 EM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+VARNING: Unmatched cancel notification for request id 3425
+2024.01.14 15:17:05 INFO  compiling project_183d125c5c (2 scala sources)[0m
+2024.01.14 15:17:06 INFO  time: compiled project_183d125c5c in 1.14s[0m
+2024.01.14 15:17:06 INFO  BSP server: Jan 14, 2024 3:17:06 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint request[0m
+2024.01.14 15:17:06 INFO  BSP server: WARNING: Unsupported request method: buildTarget/jvmRunEnvironment[0m
+2024.01.14 15:17:06 INFO  scala-cli should support `buildTarget/jvmRunEnvironment`, but it fails.
+org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Unsupported request method: buildTarget/jvmRunEnvironment
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:209)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:193)
+	at scala.meta.internal.metals.RequestMonitorImpl$$anon$1.consume(ServerLivenessMonitor.scala:39)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[0m
+2024.01.14 15:18:23 INFO  compiling project_183d125c5c (2 scala sources)[0m
+2024.01.14 15:18:23 INFO  time: compiled project_183d125c5c in 0.69s[0m
+2024.01.14 15:18:24 INFO  BSP server: Jan 14, 2024 3:18:24 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint request[0m
+2024.01.14 15:18:24 INFO  BSP server: WARNING: Unsupported request method: buildTarget/jvmRunEnvironment[0m
+2024.01.14 15:18:24 INFO  scala-cli should support `buildTarget/jvmRunEnvironment`, but it fails.
+org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Unsupported request method: buildTarget/jvmRunEnvironment
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:209)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:193)
+	at scala.meta.internal.metals.RequestMonitorImpl$$anon$1.consume(ServerLivenessMonitor.scala:39)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[0m
+2024.01.14 15:18:31 INFO  compiling project_183d125c5c (2 scala sources)[0m
+2024.01.14 15:18:31 INFO  time: compiled project_183d125c5c in 0.43s[0m
+2024.01.14 15:18:32 INFO  BSP server: Jan 14, 2024 3:18:32 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint request[0m
+2024.01.14 15:18:32 INFO  BSP server: WARNING: Unsupported request method: buildTarget/jvmRunEnvironment[0m
+2024.01.14 15:18:32 INFO  scala-cli should support `buildTarget/jvmRunEnvironment`, but it fails.
+org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Unsupported request method: buildTarget/jvmRunEnvironment
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:209)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:193)
+	at scala.meta.internal.metals.RequestMonitorImpl$$anon$1.consume(ServerLivenessMonitor.scala:39)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[0m
+2024.01.14 15:18:52 INFO  compiling project_183d125c5c (2 scala sources)[0m
+2024.01.14 15:18:52 INFO  time: compiled project_183d125c5c in 0.99s[0m
+2024.01.14 15:18:53 INFO  BSP server: Jan 14, 2024 3:18:53 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint request[0m
+2024.01.14 15:18:53 INFO  BSP server: WARNING: Unsupported request method: buildTarget/jvmRunEnvironment[0m
+2024.01.14 15:18:53 INFO  scala-cli should support `buildTarget/jvmRunEnvironment`, but it fails.
+org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Unsupported request method: buildTarget/jvmRunEnvironment
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:209)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:193)
+	at scala.meta.internal.metals.RequestMonitorImpl$$anon$1.consume(ServerLivenessMonitor.scala:39)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[0m
+2024.01.14 15:18:56 INFO  compiling project_183d125c5c (2 scala sources)[0m
+2024.01.14 15:18:58 INFO  time: compiled project_183d125c5c in 1.45s[0m
+2024.01.14 15:18:58 INFO  BSP server: Jan 14, 2024 3:18:58 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint request[0m
+2024.01.14 15:18:58 INFO  BSP server: WARNING: Unsupported request method: buildTarget/jvmRunEnvironment[0m
+2024.01.14 15:18:58 INFO  scala-cli should support `buildTarget/jvmRunEnvironment`, but it fails.
+org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Unsupported request method: buildTarget/jvmRunEnvironment
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:209)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:193)
+	at scala.meta.internal.metals.RequestMonitorImpl$$anon$1.consume(ServerLivenessMonitor.scala:39)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[0m
+2024.01.14 15:18:58 INFO  compiling project_183d125c5c (2 scala sources)[0m
+2024.01.14 15:19:00 INFO  time: compiled project_183d125c5c in 1.98s[0m
+2024.01.14 15:19:00 INFO  BSP server: Jan 14, 2024 3:19:00 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint request[0m
+2024.01.14 15:19:00 INFO  BSP server: WARNING: Unsupported request method: buildTarget/jvmRunEnvironment[0m
+2024.01.14 15:19:00 INFO  scala-cli should support `buildTarget/jvmRunEnvironment`, but it fails.
+org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Unsupported request method: buildTarget/jvmRunEnvironment
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:209)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:193)
+	at scala.meta.internal.metals.RequestMonitorImpl$$anon$1.consume(ServerLivenessMonitor.scala:39)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[0m
+2024.01.14 15:19:00 INFO  compiling project_183d125c5c (2 scala sources)[0m
+2024.01.14 15:19:02 INFO  time: compiled project_183d125c5c in 1.24s[0m
+2024.01.14 15:19:02 INFO  BSP server: Jan 14, 2024 3:19:02 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint request[0m
+2024.01.14 15:19:02 INFO  BSP server: WARNING: Unsupported request method: buildTarget/jvmRunEnvironment[0m
+2024.01.14 15:19:02 INFO  scala-cli should support `buildTarget/jvmRunEnvironment`, but it fails.
+org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Unsupported request method: buildTarget/jvmRunEnvironment
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:209)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:193)
+	at scala.meta.internal.metals.RequestMonitorImpl$$anon$1.consume(ServerLivenessMonitor.scala:39)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[0m
+jan 14, 2024 3:19:12 EM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+VARNING: Unmatched cancel notification for request id 3711
+2024.01.14 15:19:14 INFO  compiling project_183d125c5c (2 scala sources)[0m
+2024.01.14 15:19:14 INFO  time: compiled project_183d125c5c in 0.41s[0m
+2024.01.14 15:19:14 INFO  BSP server: Jan 14, 2024 3:19:14 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint request[0m
+2024.01.14 15:19:14 INFO  BSP server: WARNING: Unsupported request method: buildTarget/jvmRunEnvironment[0m
+2024.01.14 15:19:14 INFO  scala-cli should support `buildTarget/jvmRunEnvironment`, but it fails.
+org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Unsupported request method: buildTarget/jvmRunEnvironment
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:209)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:193)
+	at scala.meta.internal.metals.RequestMonitorImpl$$anon$1.consume(ServerLivenessMonitor.scala:39)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[0m
+2024.01.14 15:19:23 INFO  compiling project_183d125c5c (2 scala sources)[0m
+2024.01.14 15:19:23 INFO  time: compiled project_183d125c5c in 0.38s[0m
+2024.01.14 15:19:23 INFO  BSP server: Jan 14, 2024 3:19:23 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint request[0m
+2024.01.14 15:19:23 INFO  BSP server: WARNING: Unsupported request method: buildTarget/jvmRunEnvironment[0m
+2024.01.14 15:19:23 INFO  scala-cli should support `buildTarget/jvmRunEnvironment`, but it fails.
+org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Unsupported request method: buildTarget/jvmRunEnvironment
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:209)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:193)
+	at scala.meta.internal.metals.RequestMonitorImpl$$anon$1.consume(ServerLivenessMonitor.scala:39)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[0m
+2024.01.14 15:19:27 INFO  compiling project_183d125c5c (2 scala sources)[0m
+2024.01.14 15:19:27 INFO  time: compiled project_183d125c5c in 0.24s[0m
+2024.01.14 15:19:28 INFO  BSP server: Jan 14, 2024 3:19:28 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint request[0m
+2024.01.14 15:19:28 INFO  BSP server: WARNING: Unsupported request method: buildTarget/jvmRunEnvironment[0m
+2024.01.14 15:19:28 INFO  scala-cli should support `buildTarget/jvmRunEnvironment`, but it fails.
+org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Unsupported request method: buildTarget/jvmRunEnvironment
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:209)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:193)
+	at scala.meta.internal.metals.RequestMonitorImpl$$anon$1.consume(ServerLivenessMonitor.scala:39)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[0m
+2024.01.14 15:23:58 INFO  compiling project_183d125c5c (2 scala sources)[0m
+2024.01.14 15:23:58 INFO  time: compiled project_183d125c5c in 0.44s[0m
+2024.01.14 15:23:59 INFO  BSP server: Jan 14, 2024 3:23:59 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint request[0m
+2024.01.14 15:23:59 INFO  BSP server: WARNING: Unsupported request method: buildTarget/jvmRunEnvironment[0m
+2024.01.14 15:23:59 INFO  scala-cli should support `buildTarget/jvmRunEnvironment`, but it fails.
+org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Unsupported request method: buildTarget/jvmRunEnvironment
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:209)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:193)
+	at scala.meta.internal.metals.RequestMonitorImpl$$anon$1.consume(ServerLivenessMonitor.scala:39)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[0m
+2024.01.14 15:24:40 INFO  compiling project_183d125c5c (2 scala sources)[0m
+2024.01.14 15:24:40 INFO  time: compiled project_183d125c5c in 0.66s[0m
+2024.01.14 15:24:41 INFO  BSP server: Jan 14, 2024 3:24:41 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint request[0m
+2024.01.14 15:24:41 INFO  scala-cli should support `buildTarget/jvmRunEnvironment`, but it fails.
+org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Unsupported request method: buildTarget/jvmRunEnvironment
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:209)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:193)
+	at scala.meta.internal.metals.RequestMonitorImpl$$anon$1.consume(ServerLivenessMonitor.scala:39)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[0m
+2024.01.14 15:24:41 INFO  BSP server: WARNING: Unsupported request method: buildTarget/jvmRunEnvironment[0m
+2024.01.14 15:24:45 INFO  compiling project_183d125c5c (2 scala sources)[0m
+2024.01.14 15:24:45 INFO  time: compiled project_183d125c5c in 0.44s[0m
+2024.01.14 15:24:46 INFO  BSP server: Jan 14, 2024 3:24:46 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint request[0m
+2024.01.14 15:24:46 INFO  BSP server: WARNING: Unsupported request method: buildTarget/jvmRunEnvironment[0m
+2024.01.14 15:24:46 INFO  scala-cli should support `buildTarget/jvmRunEnvironment`, but it fails.
+org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Unsupported request method: buildTarget/jvmRunEnvironment
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:209)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:193)
+	at scala.meta.internal.metals.RequestMonitorImpl$$anon$1.consume(ServerLivenessMonitor.scala:39)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[0m
+2024.01.14 15:24:50 INFO  compiling project_183d125c5c (2 scala sources)[0m
+2024.01.14 15:24:50 INFO  time: compiled project_183d125c5c in 0.16s[0m
+2024.01.14 15:24:50 INFO  BSP server: Jan 14, 2024 3:24:50 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint request[0m
+2024.01.14 15:24:50 INFO  BSP server: WARNING: Unsupported request method: buildTarget/jvmRunEnvironment[0m
+2024.01.14 15:24:50 INFO  scala-cli should support `buildTarget/jvmRunEnvironment`, but it fails.
+org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Unsupported request method: buildTarget/jvmRunEnvironment
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:209)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:193)
+	at scala.meta.internal.metals.RequestMonitorImpl$$anon$1.consume(ServerLivenessMonitor.scala:39)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[0m
+2024.01.14 15:25:04 INFO  compiling project_183d125c5c (2 scala sources)[0m
+2024.01.14 15:25:04 INFO  time: compiled project_183d125c5c in 0.34s[0m
+2024.01.14 15:25:04 INFO  BSP server: Jan 14, 2024 3:25:04 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint request[0m
+2024.01.14 15:25:04 INFO  BSP server: WARNING: Unsupported request method: buildTarget/jvmRunEnvironment[0m
+2024.01.14 15:25:04 INFO  scala-cli should support `buildTarget/jvmRunEnvironment`, but it fails.
+org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Unsupported request method: buildTarget/jvmRunEnvironment
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:209)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:193)
+	at scala.meta.internal.metals.RequestMonitorImpl$$anon$1.consume(ServerLivenessMonitor.scala:39)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[0m
+2024.01.14 15:25:07 INFO  compiling project_183d125c5c (2 scala sources)[0m
+2024.01.14 15:25:07 INFO  time: compiled project_183d125c5c in 0.32s[0m
+2024.01.14 15:25:08 INFO  BSP server: Jan 14, 2024 3:25:08 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint request[0m
+2024.01.14 15:25:08 INFO  BSP server: WARNING: Unsupported request method: buildTarget/jvmRunEnvironment[0m
+2024.01.14 15:25:08 INFO  scala-cli should support `buildTarget/jvmRunEnvironment`, but it fails.
+org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Unsupported request method: buildTarget/jvmRunEnvironment
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:209)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:193)
+	at scala.meta.internal.metals.RequestMonitorImpl$$anon$1.consume(ServerLivenessMonitor.scala:39)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[0m
+jan 14, 2024 3:26:31 EM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+VARNING: Unmatched cancel notification for request id 4312
+2024.01.14 15:26:35 INFO  compiling project_183d125c5c (2 scala sources)[0m
+2024.01.14 15:26:37 INFO  time: compiled project_183d125c5c in 1.45s[0m
+2024.01.14 15:26:37 INFO  BSP server: Jan 14, 2024 3:26:37 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint request[0m
+2024.01.14 15:26:37 INFO  BSP server: WARNING: Unsupported request method: buildTarget/jvmRunEnvironment[0m
+2024.01.14 15:26:37 INFO  scala-cli should support `buildTarget/jvmRunEnvironment`, but it fails.
+org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Unsupported request method: buildTarget/jvmRunEnvironment
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:209)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:193)
+	at scala.meta.internal.metals.RequestMonitorImpl$$anon$1.consume(ServerLivenessMonitor.scala:39)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[0m
+2024.01.14 15:26:45 INFO  compiling project_183d125c5c (2 scala sources)[0m
+2024.01.14 15:26:46 INFO  time: compiled project_183d125c5c in 1.25s[0m
+2024.01.14 15:26:46 INFO  BSP server: Jan 14, 2024 3:26:46 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint request[0m
+2024.01.14 15:26:46 INFO  BSP server: WARNING: Unsupported request method: buildTarget/jvmRunEnvironment[0m
+2024.01.14 15:26:46 INFO  scala-cli should support `buildTarget/jvmRunEnvironment`, but it fails.
+org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Unsupported request method: buildTarget/jvmRunEnvironment
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:209)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:193)
+	at scala.meta.internal.metals.RequestMonitorImpl$$anon$1.consume(ServerLivenessMonitor.scala:39)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[0m
+jan 14, 2024 3:27:20 EM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+VARNING: Unmatched cancel notification for request id 4406
+jan 14, 2024 3:27:20 EM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+VARNING: Unmatched cancel notification for request id 4408
+2024.01.14 15:27:22 INFO  compiling project_183d125c5c (2 scala sources)[0m
+2024.01.14 15:27:22 INFO  time: compiled project_183d125c5c in 0.35s[0m
+2024.01.14 15:27:22 INFO  BSP server: Jan 14, 2024 3:27:22 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint request[0m
+2024.01.14 15:27:22 INFO  BSP server: WARNING: Unsupported request method: buildTarget/jvmRunEnvironment[0m
+2024.01.14 15:27:22 INFO  scala-cli should support `buildTarget/jvmRunEnvironment`, but it fails.
+org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Unsupported request method: buildTarget/jvmRunEnvironment
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:209)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:193)
+	at scala.meta.internal.metals.RequestMonitorImpl$$anon$1.consume(ServerLivenessMonitor.scala:39)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[0m
+2024.01.14 15:27:42 INFO  compiling project_183d125c5c (2 scala sources)[0m
+2024.01.14 15:27:42 INFO  time: compiled project_183d125c5c in 0.22s[0m
+2024.01.14 15:27:42 INFO  BSP server: Jan 14, 2024 3:27:42 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint request[0m
+2024.01.14 15:27:42 INFO  BSP server: WARNING: Unsupported request method: buildTarget/jvmRunEnvironment[0m
+2024.01.14 15:27:42 INFO  scala-cli should support `buildTarget/jvmRunEnvironment`, but it fails.
+org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Unsupported request method: buildTarget/jvmRunEnvironment
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:209)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:193)
+	at scala.meta.internal.metals.RequestMonitorImpl$$anon$1.consume(ServerLivenessMonitor.scala:39)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[0m
+2024.01.14 15:27:51 INFO  compiling project_183d125c5c (2 scala sources)[0m
+2024.01.14 15:27:51 INFO  time: compiled project_183d125c5c in 0.27s[0m
+2024.01.14 15:27:51 INFO  BSP server: Jan 14, 2024 3:27:51 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint request[0m
+2024.01.14 15:27:51 INFO  BSP server: WARNING: Unsupported request method: buildTarget/jvmRunEnvironment[0m
+2024.01.14 15:27:51 INFO  scala-cli should support `buildTarget/jvmRunEnvironment`, but it fails.
+org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Unsupported request method: buildTarget/jvmRunEnvironment
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:209)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:193)
+	at scala.meta.internal.metals.RequestMonitorImpl$$anon$1.consume(ServerLivenessMonitor.scala:39)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[0m
+2024.01.14 15:28:01 INFO  compiling project_183d125c5c (2 scala sources)[0m
+2024.01.14 15:28:01 INFO  time: compiled project_183d125c5c in 0.23s[0m
+2024.01.14 15:28:02 INFO  BSP server: Jan 14, 2024 3:28:02 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint request[0m
+2024.01.14 15:28:02 INFO  BSP server: WARNING: Unsupported request method: buildTarget/jvmRunEnvironment[0m
+2024.01.14 15:28:02 INFO  scala-cli should support `buildTarget/jvmRunEnvironment`, but it fails.
+org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Unsupported request method: buildTarget/jvmRunEnvironment
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:209)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:193)
+	at scala.meta.internal.metals.RequestMonitorImpl$$anon$1.consume(ServerLivenessMonitor.scala:39)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[0m
+2024.01.14 15:28:14 WARN  Could not find semantic tokens for: file:///Users/axellangenskiold/scalaProjekt/otello/Otello/Program/HardPlayer.scala[0m
+2024.01.14 15:28:15 INFO  compiling project_183d125c5c (2 scala sources)[0m
+2024.01.14 15:28:15 INFO  time: compiled project_183d125c5c in 0.7s[0m
+2024.01.14 15:28:15 INFO  BSP server: Jan 14, 2024 3:28:15 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint request[0m
+2024.01.14 15:28:15 INFO  BSP server: WARNING: Unsupported request method: buildTarget/jvmRunEnvironment[0m
+2024.01.14 15:28:15 INFO  scala-cli should support `buildTarget/jvmRunEnvironment`, but it fails.
+org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Unsupported request method: buildTarget/jvmRunEnvironment
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:209)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:193)
+	at scala.meta.internal.metals.RequestMonitorImpl$$anon$1.consume(ServerLivenessMonitor.scala:39)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[0m
+2024.01.14 15:28:15 WARN  Could not find semantic tokens for: file:///Users/axellangenskiold/scalaProjekt/otello/Otello/Program/HardPlayer.scala[0m
+2024.01.14 15:28:59 INFO  BSP server: Jan 14, 2024 3:28:59 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint request[0m
+2024.01.14 15:28:59 INFO  BSP server: WARNING: Unsupported request method: buildTarget/jvmRunEnvironment[0m
+2024.01.14 15:28:59 INFO  scala-cli should support `buildTarget/jvmRunEnvironment`, but it fails.
+org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Unsupported request method: buildTarget/jvmRunEnvironment
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:209)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:193)
+	at scala.meta.internal.metals.RequestMonitorImpl$$anon$1.consume(ServerLivenessMonitor.scala:39)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[0m
+2024.01.14 15:30:28 WARN  Could not load snapshot text for /Users/axellangenskiold/scalaProjekt/otello/Otello/Program/Sheet.scala[0m
+2024.01.14 15:30:29 INFO  compiling project_183d125c5c (1 scala source)[0m
+2024.01.14 15:30:29 INFO  time: compiled project_183d125c5c in 0.87s[0m
+2024.01.14 15:30:30 INFO  BSP server: Jan 14, 2024 3:30:30 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint request[0m
+2024.01.14 15:30:30 INFO  BSP server: WARNING: Unsupported request method: buildTarget/jvmRunEnvironment[0m
+2024.01.14 15:30:30 INFO  scala-cli should support `buildTarget/jvmRunEnvironment`, but it fails.
+org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Unsupported request method: buildTarget/jvmRunEnvironment
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:209)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:193)
+	at scala.meta.internal.metals.RequestMonitorImpl$$anon$1.consume(ServerLivenessMonitor.scala:39)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[0m
+jan 14, 2024 3:32:24 EM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+VARNING: Unmatched cancel notification for request id 4786
+2024.01.14 15:32:39 INFO  compiling project_183d125c5c (1 scala source)[0m
+2024.01.14 15:32:39 INFO  time: compiled project_183d125c5c in 0.36s[0m
+2024.01.14 15:32:39 INFO  BSP server: Jan 14, 2024 3:32:39 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint request[0m
+2024.01.14 15:32:39 INFO  BSP server: WARNING: Unsupported request method: buildTarget/jvmRunEnvironment[0m
+2024.01.14 15:32:39 INFO  scala-cli should support `buildTarget/jvmRunEnvironment`, but it fails.
+org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Unsupported request method: buildTarget/jvmRunEnvironment
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:209)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:193)
+	at scala.meta.internal.metals.RequestMonitorImpl$$anon$1.consume(ServerLivenessMonitor.scala:39)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[0m
+jan 14, 2024 3:32:50 EM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+VARNING: Unmatched cancel notification for request id 4886
+2024.01.14 15:32:50 INFO  compiling project_183d125c5c (1 scala source)[0m
+2024.01.14 15:32:50 INFO  time: compiled project_183d125c5c in 0.56s[0m
+2024.01.14 15:32:51 INFO  BSP server: Jan 14, 2024 3:32:51 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint request[0m
+2024.01.14 15:32:51 INFO  BSP server: WARNING: Unsupported request method: buildTarget/jvmRunEnvironment[0m
+2024.01.14 15:32:51 INFO  scala-cli should support `buildTarget/jvmRunEnvironment`, but it fails.
+org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Unsupported request method: buildTarget/jvmRunEnvironment
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:209)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:193)
+	at scala.meta.internal.metals.RequestMonitorImpl$$anon$1.consume(ServerLivenessMonitor.scala:39)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[0m
+2024.01.14 15:33:02 INFO  compiling project_183d125c5c (1 scala source)[0m
+2024.01.14 15:33:02 INFO  time: compiled project_183d125c5c in 0.67s[0m
+2024.01.14 15:33:03 INFO  BSP server: Jan 14, 2024 3:33:03 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint request[0m
+2024.01.14 15:33:03 INFO  BSP server: WARNING: Unsupported request method: buildTarget/jvmRunEnvironment[0m
+2024.01.14 15:33:03 INFO  scala-cli should support `buildTarget/jvmRunEnvironment`, but it fails.
+org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Unsupported request method: buildTarget/jvmRunEnvironment
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:209)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:193)
+	at scala.meta.internal.metals.RequestMonitorImpl$$anon$1.consume(ServerLivenessMonitor.scala:39)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[0m
+2024.01.14 15:33:12 INFO  compiling project_183d125c5c (1 scala source)[0m
+2024.01.14 15:33:12 INFO  time: compiled project_183d125c5c in 0.49s[0m
+2024.01.14 15:33:12 INFO  BSP server: Jan 14, 2024 3:33:12 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint request[0m
+2024.01.14 15:33:12 INFO  BSP server: WARNING: Unsupported request method: buildTarget/jvmRunEnvironment[0m
+2024.01.14 15:33:12 INFO  scala-cli should support `buildTarget/jvmRunEnvironment`, but it fails.
+org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Unsupported request method: buildTarget/jvmRunEnvironment
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:209)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:193)
+	at scala.meta.internal.metals.RequestMonitorImpl$$anon$1.consume(ServerLivenessMonitor.scala:39)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[0m
+2024.01.14 15:34:13 INFO  compiling project_183d125c5c (1 scala source)[0m
+2024.01.14 15:34:13 INFO  time: compiled project_183d125c5c in 0.73s[0m
+2024.01.14 15:34:13 INFO  compiling project_183d125c5c (1 scala source)[0m
+2024.01.14 15:34:15 INFO  time: compiled project_183d125c5c in 0.48s[0m
+2024.01.14 15:34:15 INFO  BSP server: Jan 14, 2024 3:34:15 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint request[0m
+2024.01.14 15:34:15 INFO  BSP server: WARNING: Unsupported request method: buildTarget/jvmRunEnvironment[0m
+2024.01.14 15:34:15 INFO  scala-cli should support `buildTarget/jvmRunEnvironment`, but it fails.
+org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Unsupported request method: buildTarget/jvmRunEnvironment
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:209)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:193)
+	at scala.meta.internal.metals.RequestMonitorImpl$$anon$1.consume(ServerLivenessMonitor.scala:39)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[0m
+2024.01.14 15:34:26 INFO  compiling project_183d125c5c (1 scala source)[0m
+2024.01.14 15:34:26 INFO  time: compiled project_183d125c5c in 0.42s[0m
+2024.01.14 15:34:26 INFO  BSP server: Jan 14, 2024 3:34:26 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint request[0m
+2024.01.14 15:34:26 INFO  BSP server: WARNING: Unsupported request method: buildTarget/jvmRunEnvironment[0m
+2024.01.14 15:34:26 INFO  scala-cli should support `buildTarget/jvmRunEnvironment`, but it fails.
+org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Unsupported request method: buildTarget/jvmRunEnvironment
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:209)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:193)
+	at scala.meta.internal.metals.RequestMonitorImpl$$anon$1.consume(ServerLivenessMonitor.scala:39)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[0m
