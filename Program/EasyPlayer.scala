@@ -16,6 +16,7 @@ class EasyPlayer extends Opponent {
                         leastFlipped = amountOfFlips
                         worstMove = (i, j)
         
-        //Thread.sleep(2000)
         Sheet.makeMove(worstMove._1, worstMove._2)
+    
+    def isCPU() = true
 }

@@ -94,7 +94,6 @@ object Sheet {
 
     def isPossibleMove(i: Int, j: Int): Boolean = 
         
-
         if (!isEmptyBox(sheet(i)(j))) then 
             false
         else 

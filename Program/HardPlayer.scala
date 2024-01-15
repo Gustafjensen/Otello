@@ -16,6 +16,7 @@ class HardPlayer extends Opponent {
                         mostFlipped = amountOfFlips
                         bestMove = (i, j)
         
-        //Thread.sleep(2000)
         Sheet.makeMove(bestMove._1, bestMove._2)
-}
+    
+    def isCPU() = true
+    }

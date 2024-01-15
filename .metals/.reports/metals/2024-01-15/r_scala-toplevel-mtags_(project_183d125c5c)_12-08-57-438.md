@@ -1,4 +1,4 @@
-package otello
+error id: file://<WORKSPACE>/GUI/GUI.scala:[3131..3138) in Input.VirtualFile("file://<WORKSPACE>/GUI/GUI.scala", "package otello
 
 import javax.swing._
 import java.awt._
@@ -53,26 +53,21 @@ class GUI() extends JFrame {
         updateGui()
     
 
-    def handleButtonClick(i: Int, j: Int): Unit =
-        if (opponent.isCPU()) then
-            if (!Sheet.whiteTurn) then 
-                toFastMessageBox()
-            else
-                if (Sheet.isPossibleMove(i, j)) then 
-                    Sheet.makeMove(i, j)
-                    updateGui()
-                    val delayedOppositeTurn: Future[Unit] = Future {
-                        Thread.sleep(1000)
-                    }
-                    delayedOppositeTurn.onComplete { _ => 
-                        handleOppositeplayer()
-                    }
-        else if (Sheet.isPossibleMove(i, j)) then 
-                Sheet.makeMove(i, j)
-                updateGui() 
+    def handleButtonClick(i: Int, j: Int): Unit = 
+        if (!Sheet.whiteTurn) then 
+            toFastMessageBox()
+        if (Sheet.isPossibleMove(i, j)) then 
+            Sheet.makeMove(i, j)
+            updateGui()
+            val delayedOppositeTurn: Future[Unit] = Future {
+                Thread.sleep(1000)
+            }
+            delayedOppositeTurn.onComplete { _ => 
+                handleOppositeplayer()
+            }
         else 
             JOptionPane.showMessageDialog(null ,"Not a legal move")
-            
+        
         if (Sheet.checkIfOver()) then
             gameOverMessage("Good Game!")
     
@@ -108,8 +103,7 @@ class GUI() extends JFrame {
     def clear(button: JButton): Unit = 
         button.setIcon(null)
     
-    private def toFastMessageBox(): Unit =
-        JOptionPane.showMessageDialog(null, "Not your turn yet! The algoritm is calculating its next move ;)")
+    private def 
 
 
     private def chooseOpponentMessage(): Opponent = 
@@ -181,4 +175,11 @@ class GUI() extends JFrame {
             case JOptionPane.CLOSED_OPTION =>
                 gameOverMessage("You need to make a choice!")
         
-}
+}")
+file://<WORKSPACE>/GUI/GUI.scala
+file://<WORKSPACE>/GUI/GUI.scala:109: error: expected identifier; obtained private
+    private def chooseOpponentMessage(): Opponent = 
+    ^
+#### Short summary: 
+
+expected identifier; obtained private
